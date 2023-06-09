@@ -1,20 +1,23 @@
 'use client';
 import { BsFillMoonStarsFill, BsFillSunFill } from 'react-icons/bs';
-import { AiFillGithub, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai'
-
+import { AiFillGithub, AiFillLinkedin, AiFillTwitterSquare } from 'react-icons/ai';
 import { MdEmail, MdGpsFixed, MdPhone } from 'react-icons/md';
+import { FaSymfony, FaJava } from 'react-icons/fa';
+import { GrMysql } from 'react-icons/gr';
+import { SiFlutter,SiExpress,SiMongodb ,SiAngular,SiSpring,SiGraphql,SiFlask} from 'react-icons/si';
 import Image from 'next/image';
 import deved from "../../public/dev-ed-wave.png";
-import design from "../../public/design.png";
 import consulting from "../../public/consulting.png";
-import code from "../../public/code.png";
-import web1 from "../../public/web1.png"
-import web2 from "../../public/web2.png"
-import web3 from "../../public/web3.png"
-import web4 from "../../public/web4.png"
-import web5 from "../../public/web5.png"
-import web6 from "../../public/web6.png"
-import contact from '../../public/contact.png';
+import farmsanctuary from "../../public/farm-sanctuary.png";
+import farmsanctuarydelivery from "../../public/farm-sanctuary-delivery.png";
+import sahti from "../../public/SAHTI_without_bg.png";
+import web1 from "../../public/web1.png";
+import web2 from "../../public/web2.png";
+import web3 from "../../public/web3.png";
+import web4 from "../../public/web4.png";
+import web5 from "../../public/web5.png";
+import web6 from "../../public/web6.png";
+
 import { useState } from 'react';
 
 export default function Home() {
@@ -33,48 +36,10 @@ export default function Home() {
               ) : (
                 <li><BsFillSunFill onClick={() => setDarkMode(false)} className='cursor-pointer text-2xl text-white' /></li>
               )}
-            
-              <li><a className=' bg-gradient-to-t from-cyan-500 to-teal-500  text-white px-4 py-2 border-none rounded-md ml-8' href="/CV.pdf" download="CV">Resume</a> </li>
-            </ul>
-            <div className="MOBILE-MENU flex lg:hidden">
-          <div
-            className="HAMBURGER-ICON space-y-2"
-          >
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-            <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
-          </div>
 
-          <div>
-            <div
-              className="absolute top-0 right-0 px-8 py-8"
-            >
-              <svg
-                className="h-8 w-8 text-gray-600"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <line x1="18" y1="6" x2="6" y2="18" />
-                <line x1="6" y1="6" x2="18" y2="18" />
-              </svg>
-            </div>
-            <ul className="NAVIGATION-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/about">About</a>
-              </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/portfolio">Portfolio</a>
-              </li>
-              <li className="border-b border-gray-400 my-8 uppercase">
-                <a href="/contact">Contact</a>
-              </li>
+              <li><a className=' bg-gradient-to-t from-cyan-500 to-teal-500  text-white px-4 py-2 border-none rounded-md ml-8 ' href="/CV.pdf" download="CV">Resume</a> </li>
             </ul>
-          </div>
-        </div>
+
           </nav>
           <div className='grid grid-cols-1 md:grid-cols-2' >
             <div className='col-span-1'>
@@ -84,9 +49,12 @@ export default function Home() {
 
               </div>
               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-                <AiFillGithub />
-                <AiFillLinkedin />
-                <AiFillTwitterSquare />
+                <a href="https://github.com/rayen-creator"><AiFillGithub className='cursor-pointer hover:text-black' />
+                </a>
+                <a href="https://www.linkedin.com/in/rayen-oueslati-72a55b1b0/"><AiFillLinkedin className='cursor-pointer hover:text-blue-600' />
+                </a>
+                <a href="https://twitter.com/rayenoueslati8"><AiFillTwitterSquare className='cursor-pointer hover:text-cyan-500' />
+                </a>
 
               </div>
             </div>
@@ -106,7 +74,7 @@ export default function Home() {
           <div className='grid grid-cols-1 md:grid-cols-2 divide-xs'>
             <div className='col-span-1'>
               <h4 className='text-3xl text-center font-bold py-1 dark:text-white'>Who AM I ? </h4>
-              <p className='text-md py-14 leading-8 text-gray-600 md:text-xl max-w-xl mx-auto dark:text-gray-400'>
+              <p className='text-md py-14 px-7  text-justify leading-8 text-gray-600 md:text-xl max-w-xl mx-auto dark:text-gray-400'>
                 IT engineering student, I am passionate about expanding my knowledge and skills in the field. I am constantly seeking new opportunities to learn and grow, and I am excited to connect with professionals who share my enthusiasm for technology. Whether it's through internships, projects, or mentorship, I am eager to evolve and make a meaningful contribution to the industry.
               </p>
             </div>
@@ -146,51 +114,103 @@ export default function Home() {
         </section>
         <section className='pt-5'>
           <div>
-            <h3 className='text-3xl font-bold py-1'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-600'>
-              Lorem ipsum dolor <span className='text-teal-500'>sit amet consectetur</span> , adipisicing elit. Ut aliquid, voluptas laboriosam maxime unde quidem consequatur. Exercitationem, magnam. Possimus enim maiores modi rerum voluptates ea cupiditate unde culpa aspernatur accusantium.
+            <h3 className='text-3xl font-bold py-1 dark:text-white'>My projects</h3>
+            <p className='text-md py-2 leading-8 text-gray-600 dark:text-gray-400'>
+              Over the years, as an IT engineer and full-stack developer,
+              I have had the opportunity to work on several projects that have enriched my experience and
+              knowledge, especially in utilizing the latest and widely adopted technologies.
+              <br /> Allow me to share some of the notable projects I have worked on:
             </p>
           </div>
-          <div className=' lg:flex gap-10'>
+          <div className=' lg:grid grid-cols-3 gap-10 '>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className="flex justify-center">
-                <Image src={code} width={100} height={100} />
-              </div>            <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful design</h3>
-              <p className='py-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, minus. Sed animi, saepe adipisci, deleniti impedit doloribus quo vero illo pariatur eos libero, perspiciatis asperiores voluptatem blanditiis! Perferendis, in repudiandae.
+                <Image src={farmsanctuary} width={150} height={150} />
+              </div>            <h3 className='text-lg font-medium pt-8 pb-2'>Farm sanctuary</h3>
+              <p className='py-2 text-justify'>
+              FarmSanctaury is a sustainable farming web application that aims to provide farmers with a platform to adopt sustainable farming practices and increase the overall sustainability of agriculture.
+              The goal of the web application is to promote sustainable agriculture, reduce waste and environmental impact, and provide farmers with the tools and resources they need to succeed in their farming operations.              </p>
+              <h4 className='py-4 text-teal-600'>Stack</h4>
+              <div className='flex justify-center items-end gap-4 text-4xl '>
+                <p className='text-gray-600 py-1'><SiAngular className='hover:text-red-500' /></p>
+                <p className='text-gray-600 py-1'><SiGraphql className='hover:text-pink-400' /></p>
+                <p className='text-gray-600 py-1'><SiExpress className='hover:text-black' /></p>
+                <p className='text-gray-600 py-1'><SiFlask className='hover:text-black' /></p>
+                <p className='text-gray-600 py-1'><SiMongodb className='hover:text-green-400'/></p>
+              </div>
+              <h4 className='py-4 text-teal-600'>Github repository </h4>
+
+              <div className='flex justify-center '>
+                <a className='text-gray-600 py-1 cursor-pointer hover:text-black' href="https://github.com/rayen-creator/farm_sanctuary"  target="_blank"><div className='flex items-center border-2 rounded-md shadow-md p-1 '><AiFillGithub className='text-4xl hover:text-black' /></div> </a>
+              </div>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+              <div className="flex justify-center">
+                <Image src={farmsanctuarydelivery} width={150} height={150} />
+              </div>            <h3 className='text-lg font-medium pt-8 pb-2'>Farm sanctuary delivery</h3>
+              <p className='py-2 text-justify'>
+              FarmSanctuary Delivery is a purpose-built application designed specifically for delivery agents operating within the farm sanctuary. 
+              This innovative solution streamlines and enhances the delivery process, ensuring seamless coordination and efficiency.
+               With FarmSanctuary Delivery, delivery agents can effortlessly manage their tasks, track deliveries in real-time, 
+               and provide exceptional service to support the farm sanctuary's mission.              </p>
+              <h4 className='py-4 text-teal-600'>Stack</h4>
+              <div className='flex justify-center items-end gap-4 text-4xl '>
+              <p className='text-gray-600 py-1'><SiFlutter className='hover:text-cyan-500' /></p>
+              <p className='text-gray-600 py-1'><SiGraphql className='hover:text-pink-400' /></p>
+                <p className='text-gray-600 py-1'><SiExpress className='hover:text-black' /></p>
+                <p className='text-gray-600 py-1'><SiMongodb className='hover:text-green-400'/></p>
+              </div>
+              <h4 className='py-4 text-teal-600'>Github repository </h4>
+
+              <div className='flex justify-center '>
+                <a className='text-gray-600 py-1 cursor-pointer hover:text-black' href="https://github.com/rayen-creator/farm_sanctuary_delivery" target="_blank"><div className='flex items-center border-2 rounded-md shadow-md p-1 '><AiFillGithub className='text-4xl hover:text-black' /></div> </a>
+              </div>
+            </div>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+              <div className="flex justify-center">
+                <Image src={sahti} width={150} height={150} />
+              </div>            <h3 className='text-lg font-medium pt-8 pb-2'>Sahti </h3>
+              <p className='text-justify py-2'>
+                Sahti is a cross platform app designed to help people attend coaching course online and get in touch with nutritionist in order to help them get the right diet , the app also offer a online shop for athletes to get their equipements and supplies .
               </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-600 py-1'>photoshop</p>
-              <p className='text-gray-600 py-1'>Illustrator</p>
-              <p className='text-gray-600 py-1'>Figma</p>
+              <h4 className='py-4 text-teal-600'>Stack</h4>
+              <div className='flex justify-center items-end gap-4 text-4xl '>
+                <p className='text-gray-600 py-1'> <FaSymfony className='hover:text-black' /> </p>
+                <p className='text-gray-600 py-1'><FaJava className='hover:text-blue-400' /> </p>
+                <p className='text-gray-600 py-1'><GrMysql className='hover:text-blue-600' /> </p>
+              </div>
+              <h4 className='py-4 text-teal-600'>Github repository </h4>
+
+              <div className='flex justify-center items-end gap-1 '>
+                <a className='text-gray-600 py-1 cursor-pointer hover:text-black' href="https://github.com/rayen-creator/SahtiAPPWeb" target="_blank"><div className='flex items-center border-2 rounded-md shadow-md p-1 '><span className='text-sm'>Web</span><AiFillGithub className='text-4xl ' /></div> </a>
+                <a className='text-gray-600 py-1 cursor-pointer hover:text-black' href="https://github.com/rayen-creator/SahtiAppDektop" target="_blank"><div className='flex items-center border-2 rounded-md shadow-md p-1 '><span className='text-sm'>Desktop</span><AiFillGithub className='text-4xl hover:text-black' /></div> </a>
+                <a className='text-gray-600 py-1 cursor-pointer hover:text-black' href="https://github.com/rayen-creator/SahtiAPPMobile" target="_blank"><div className='flex items-center border-2 rounded-md shadow-md p-1 '><span className='text-sm'>Mobile</span><AiFillGithub className='text-4xl hover:text-black' /></div> </a>
+              </div>
+
             </div>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               <div className="flex justify-center">
                 <Image src={consulting} width={100} height={100} />
-              </div>            <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful design</h3>
-              <p className='py-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, minus. Sed animi, saepe adipisci, deleniti impedit doloribus quo vero illo pariatur eos libero, perspiciatis asperiores voluptatem blanditiis! Perferendis, in repudiandae.
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-600 py-1'>photoshop</p>
-              <p className='text-gray-600 py-1'>Illustrator</p>
-              <p className='text-gray-600 py-1'>Figma</p>
+              </div>            <h3 className='text-lg font-medium pt-8 pb-2'>Kadem web app</h3>
+              <p className='py-2 text-justify'>
+              Kadem is an academic project build for student to help them explore professtionnel life finding new oppurtunty as intern or as employee as well the project isn't finish yet and it can evolve even more , we build it using nodejs express for authentification with jwt , springboot as backend and angular as frontend-framework using mysql as database              </p>
+              <h4 className='py-4 text-teal-600'>Stack</h4>
+              <div className='flex justify-center items-end gap-4 text-4xl '>
+                <p className='text-gray-600 py-1'><SiAngular className='hover:text-red-500' /></p>
+                <p className='text-gray-600 py-1'><SiExpress className='hover:text-black' /></p>
+                <p className='text-gray-600 py-1'><SiSpring className='hover:text-green-600' /></p>
+                <p className='text-gray-600 py-1'><GrMysql className='hover:text-green-400'/></p>
+              </div>
+              <h4 className='py-4 text-teal-600'>Github repository </h4>
+
+              <div className='flex justify-center '>
+                <a className='text-gray-600 py-1 cursor-pointer hover:text-black' href="https://github.com/rayen-creator/farm_sanctuary"  target="_blank"><div className='flex items-center border-2 rounded-md shadow-md p-1 '><AiFillGithub className='text-4xl hover:text-black' /></div> </a>
+              </div>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
-              <div className="flex justify-center">
-                <Image src={design} width={100} height={100} />
-              </div>            <h3 className='text-lg font-medium pt-8 pb-2'>Beatiful design</h3>
-              <p className='py-2'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, minus. Sed animi, saepe adipisci, deleniti impedit doloribus quo vero illo pariatur eos libero, perspiciatis asperiores voluptatem blanditiis! Perferendis, in repudiandae.
-              </p>
-              <h4 className='py-4 text-teal-600'>Design tools I use</h4>
-              <p className='text-gray-600 py-1'>photoshop</p>
-              <p className='text-gray-600 py-1'>Illustrator</p>
-              <p className='text-gray-600 py-1'>Figma</p>
-            </div>
+          
           </div>
         </section>
-        <section>
+        {/* <section>
           <div>
             <h3 className='text-3xl font-bold py-1'>Portofolio</h3>
             <p className='text-md py-2 leading-8 text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ratione mollitia sint, reiciendis, fuga eum, ipsa quos adipisci laboriosam incidunt iste hic sapiente culpa assumenda doloremque dolorum corporis numquam dignissimos.</p>
@@ -215,9 +235,10 @@ export default function Home() {
               <Image src={web6} className='rounded-lg object-cover' width={100} height={100} layout='responsive' />
             </div>
           </div>
-        </section>
-        <section>
-          <h3 className='text-3xl font-bold py-1'>Let's get in touch </h3>
+        </section> */}
+
+        <section className=''>
+          <h3 className='text-3xl font-bold py-1 dark:text-white'>Let's get in touch </h3>
           <div className="grid grid-cols-2 gap-4">
             <div className="col-span-1">
               <div className=' shadow-lg text-center p-10 rounded-xl my-10  bg-teal-400'>
@@ -241,11 +262,11 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-span-1">
+            <div className="col-span-1  ">
               <div className='pt-10 '>
                 <form className="px-6 py-4">
                   <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" >
+                    <label className="block text-gray-700 text-sm font-bold mb-2 dark:text-white" >
                       Email
                     </label>
                     <input
@@ -256,7 +277,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" >
+                    <label className="block text-gray-700 text-sm font-bold mb-2 dark:text-white" >
                       Message
                     </label>
                     <textarea
