@@ -242,21 +242,21 @@ export default function Home() {
           <div className="grid grid-cols-2 gap-4">
             <div className="col-span-1">
               <div className=' shadow-lg text-center p-10 rounded-xl my-10  bg-teal-400'>
-                <div className='flex justify-items-center  p-5'>
-                  <MdGpsFixed className='text-3xl' />
-                  <p className='p-2 text-2xl'>
+                <div className='flex justify-items-center  py-4'>
+                  <MdGpsFixed className='text-sm md:text-2xl' />
+                  <p className='p-2 text-sm lg:text-2xl'>
                     Jendouba , Tunisia
                   </p>
                 </div>
-                <div className='flex justify-items-center  p-5'>
-                  <MdEmail className='text-3xl' />
-                  <p className='p-2 text-2xl'>
+                <div className='flex justify-items-center  py-4 '>
+                  <MdEmail className='text-md lg:text-2xl' />
+                  <p className='p-2  text-sm md:text-2xl'>
                     oueslati.rayen@esprit.tn
                   </p>
                 </div>
-                <div className='flex justify-items-center  p-5'>
-                  <MdPhone className='text-3xl' />
-                  <p className='p-2 text-2xl'>
+                <div className='flex justify-items-center  py-4 '>
+                  <MdPhone className='text-sm lg:text-2xl' />
+                  <p className='p-2  text-sm md:text-2xl'>
                     +216 54 547 930
                   </p>
                 </div>
