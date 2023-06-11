@@ -8,7 +8,7 @@ export default function Contact(){
                     <div className='flex justify-items-center  py-4'>
                         <MdGpsFixed className='text-sm md:text-2xl' />
                         <p className='p-2 text-sm lg:text-2xl'>
-                            Jendouba , Tunisia
+                             Tunisia
                         </p>
                     </div>
                     <div className='flex justify-items-center  py-4 '>
