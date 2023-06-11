@@ -13,13 +13,13 @@ export default function Contact(){
                     </div>
                     <div className='flex justify-items-center  py-4 '>
                         <MdEmail className='text-md lg:text-2xl' />
-                        <p className='p-2  text-sm md:text-2xl'>
+                        <p className='p-2 text-sm lg:text-2xl'>
                             oueslati.rayen@esprit.tn
                         </p>
                     </div>
                     <div className='flex justify-items-center  py-4 '>
                         <MdPhone className='text-sm lg:text-2xl' />
-                        <p className='p-2  text-sm md:text-2xl'>
+                        <p className='p-2 text-sm lg:text-2xl'>
                             +216 54 547 930
                         </p>
                     </div>
