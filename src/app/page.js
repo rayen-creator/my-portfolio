@@ -6,16 +6,19 @@ import web3 from "../../public/web3.png";
 import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
-import { useState } from "react";
+import {  useState } from "react";
 import ScrollToTop from "./scrollToTop/page";
 import Footer from "./footer/page";
 import Header from "./header/page";
 import Contact from "./contact/page";
 import Projects from "./projects/page";
 import Aboutme from "./aboutme/page";
+import Carousel from "./carousel/page";
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
 
   return (
     <main className={darkMode ? "dark" : ""}>
@@ -30,7 +33,7 @@ export default function Home() {
                 <li>
                   <BsFillMoonStarsFill
                     onClick={() => setDarkMode(true)}
-                    className="cursor-pointer text-2xl"
+                    className="cursor-pointer text-2xl  "
                   />
                 </li>
               ) : (
@@ -55,13 +58,30 @@ export default function Home() {
           </nav>
           <Header />
         </section>
-        <section className="pb-4">
+        <section className=" pb-4 ">
           <Aboutme />
         </section>
-        <section className="pt-5">
+        <section className=" pt-5">
           <Projects />
         </section>
-        {/* <section>
+        <section className="">
+          <div>
+          <h3 className="text-3xl font-bold py-1 dark:text-white">Technologies</h3>
+          </div>
+          <div className="py-10 pl-20"> 
+          <Carousel/>
+
+          </div>
+
+        </section>
+        <section className="">
+          <Contact />
+        </section>
+       
+        <ScrollToTop />
+      </div>
+      <Footer />
+      {/* <section>
           <div>
             <h3 className='text-3xl font-bold py-1'>Portofolio</h3>
             <p className='text-md py-2 leading-8 text-gray-600'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius ratione mollitia sint, reiciendis, fuga eum, ipsa quos adipisci laboriosam incidunt iste hic sapiente culpa assumenda doloremque dolorum corporis numquam dignissimos.</p>
@@ -88,12 +108,7 @@ export default function Home() {
           </div>
         </section> */}
 
-        <section className="">
-          <Contact />
-        </section>
-        <ScrollToTop />
-      </div>
-      <Footer />
+
     </main>
   );
 }
