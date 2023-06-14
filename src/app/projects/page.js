@@ -9,14 +9,13 @@ import {
   SiGraphql,
   SiFlask,
 } from "react-icons/si";
-import {
-    AiFillGithub,
-  } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import Image from "next/image";
 import consulting from "../../../public/consulting.png";
 import farmsanctuary from "../../../public/farm-sanctuary.png";
 import farmsanctuarydelivery from "../../../public/farm-sanctuary-delivery.png";
 import sahti from "../../../public/SAHTI_without_bg.png";
+import Card from "../card/page";
 export default function Projects() {
   return (
     <>
@@ -31,58 +30,65 @@ export default function Projects() {
           on:
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
-          <div className="flex justify-center">
-            <Image
-              src={farmsanctuary}
-              width={150}
-              height={150}
-              alt="farm_sanctuary"
-            />
-          </div>{" "}
-          <h3 className="text-lg font-medium pt-8 pb-2">Farm sanctuary</h3>
-          <p className="py-2 text-justify">
-            FarmSanctaury is a sustainable farming web application that aims to
-            provide farmers with a platform to adopt sustainable farming
-            practices and increase the overall sustainability of agriculture.
-            The goal of the web application is to promote sustainable
-            agriculture, reduce waste and environmental impact, and provide
-            farmers with the tools and resources they need to succeed in their
-            farming operations.{" "}
-          </p>
-          <h4 className="py-4 text-teal-600">Stack</h4>
-          <div className="flex justify-center items-end gap-4 text-4xl">
-            <p className="text-gray-600 py-1">
-              <SiAngular className="hover:text-red-500 " />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiGraphql className="hover:text-pink-400" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiExpress className="hover:text-black" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiFlask className="hover:text-black" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiMongodb className="hover:text-green-400" />
-            </p>
-          </div>
-          <h4 className="py-4 text-teal-600">Github repository </h4>
-          <div className="flex justify-center ">
-            <a
-              className="text-gray-600 py-1 cursor-pointer hover:text-black"
-              href="https://github.com/rayen-creator/farm_sanctuary"
-              target="_blank"
-            >
-              <div className="flex items-center border-2 rounded-md shadow-md p-1 ">
-                <AiFillGithub className="text-4xl hover:text-black" />
-              </div>{" "}
-            </a>
-          </div>
-        </div>
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-8">
+        <Card
+          githublink={"https://github.com/rayen-creator/farm_sanctuary"}
+          image={farmsanctuary}
+          title={"Farm sanctuary "}
+          description="sustainable farming web application that aims to provide farmers with a platform to adopt sustainable farming practices."
+          stack={[
+            <SiAngular key="angular-icon" className="hover:text-red-500" />,
+            <SiGraphql key="graphql-icon" className="hover:text-pink-400" />,
+            <SiExpress key="express-icon" className="hover:text-black" />,
+            <SiFlask key="flask-icon" className="hover:text-black" />,
+            <SiMongodb key="mongodb-icon" className="hover:text-green-400" />,
+          ]}
+        />
+        <Card
+          githublink={"https://github.com/rayen-creator/farm_sanctuary_delivery"}
+          image={farmsanctuarydelivery}
+          title={"Delivery app"}
+          description="FarmSanctuaryDelivery purpose-built application designed
+        specifically for delivery agents operating within the farm
+        sanctuary."
+          stack={[
+            <SiFlutter className="hover:text-cyan-500" />,
+            <SiGraphql key="graphql-icon" className="hover:text-pink-400" />,
+            <SiExpress key="express-icon" className="hover:text-black" />,
+            <SiFlask key="flask-icon" className="hover:text-black" />,
+            <SiMongodb key="mongodb-icon" className="hover:text-green-400" />,
+          ]}
+        />
+        <Card
+          githublink={"https://github.com/rayen-creator/farm_sanctuary"}
+          image={sahti}
+          title={"Sahti"}
+          description="Sahti is a cross platform fitness app that offer online coaching, shop and nutritionist services."
+          stack={[
+            <FaSymfony className="hover:text-black" />,
+            <FaJava className="hover:text-blue-400" />,
+            <GrMysql className="hover:text-blue-600" />,
+          ]}
+        />
+        <Card
+          githublink={"https://github.com/rayen-creator/Kadem-web-app"}
+          image={consulting}
+          title={"Kadem wep app"}
+          description="Kadem is an academic project build for student to help them explore
+        professtionnel life finding new oppurtunty as intern or as employee
+        as well."
+          stack={[
+            <SiAngular className="hover:text-red-500" />,
+
+            <SiExpress className="hover:text-black" />,
+
+            <SiSpring className="hover:text-green-600" />,
+
+            <GrMysql className="hover:text-green-400" />,
+          ]}
+        />
+
+        {/* <div className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
           <div className="flex justify-center">
             <Image
               src={farmsanctuarydelivery}
@@ -97,11 +103,7 @@ export default function Projects() {
           <p className="py-2 text-justify">
             FarmSanctuary Delivery is a purpose-built application designed
             specifically for delivery agents operating within the farm
-            sanctuary. This innovative solution streamlines and enhances the
-            delivery process, ensuring seamless coordination and efficiency.
-            With FarmSanctuary Delivery, delivery agents can effortlessly manage
-            their tasks, track deliveries in real-time, and provide exceptional
-            service to support the farm sanctuary's mission.{" "}
+            sanctuary.
           </p>
           <h4 className="py-4 text-teal-600">Stack</h4>
           <div className="flex justify-center items-end gap-4 text-4xl ">
@@ -197,10 +199,7 @@ export default function Projects() {
           <p className="py-2 text-justify">
             Kadem is an academic project build for student to help them explore
             professtionnel life finding new oppurtunty as intern or as employee
-            as well the project isn't finish yet and it can evolve even more ,
-            we build it using nodejs express for authentification with jwt ,
-            springboot as backend and angular as frontend-framework using mysql
-            as database{" "}
+            as well.
           </p>
           <h4 className="py-4 text-teal-600">Stack</h4>
           <div className="flex justify-center items-end gap-4 text-4xl ">
@@ -229,7 +228,7 @@ export default function Projects() {
               </div>{" "}
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

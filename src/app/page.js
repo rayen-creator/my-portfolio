@@ -11,7 +11,7 @@ import ScrollToTop from "./scrollToTop/page";
 import Footer from "./footer/page";
 import Header from "./header/page";
 import Contact from "./contact/page";
-import Projects from "./projects/page";
+import Projects from "./projects/page.js";
 import Aboutme from "./aboutme/page";
 import Carousel from "./carousel/page";
 
