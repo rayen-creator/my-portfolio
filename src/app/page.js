@@ -56,6 +56,7 @@ export default function Home() {
               </li>
             </ul>
           </nav>
+     
           <Header />
         </section>
         <section className=" pb-4 ">

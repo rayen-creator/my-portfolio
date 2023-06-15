@@ -12,7 +12,7 @@ import Image from "next/image";
 export default function Card({ githublink, image, title, description, stack }) {
   return (
     <>
-      <div className="text-center my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
+      <div className=" rounded-md text-center my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
         <div className="shadow-inner p-1 bg-gray-100 rounded-xl">
           <span>
             <a
