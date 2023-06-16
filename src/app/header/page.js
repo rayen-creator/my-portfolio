@@ -10,7 +10,7 @@ import Typewriter from "typewriter-effect";
 export default function Header() {
   
   return (
-    <div className="grid grid-cols-1  md:grid-cols-2 min-h-screen  lg:grid-cols-2 min-h-screen  ">
+    <div className="grid grid-cols-1  md:grid-cols-2 min-h-screen  lg:grid-cols-2   ">
       <div className="col-span-1">
         <div className="text-center p-10">
         <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">
