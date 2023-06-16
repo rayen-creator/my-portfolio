@@ -9,9 +9,7 @@ import {
   SiGraphql,
   SiFlask,
 } from "react-icons/si";
-import { AiFillGithub } from "react-icons/ai";
-import Image from "next/image";
-import consulting from "../../../public/consulting.png";
+import placeholder from "../../../public/design.png";
 import farmsanctuary from "../../../public/farm-sanctuary.png";
 import farmsanctuarydelivery from "../../../public/farm-sanctuary-delivery.png";
 import sahti from "../../../public/SAHTI_without_bg.png";
@@ -45,7 +43,9 @@ export default function Projects() {
           ]}
         />
         <Card
-          githublink={"https://github.com/rayen-creator/farm_sanctuary_delivery"}
+          githublink={
+            "https://github.com/rayen-creator/farm_sanctuary_delivery"
+          }
           image={farmsanctuarydelivery}
           title={"Delivery app"}
           description="FarmSanctuaryDelivery purpose-built application designed
@@ -72,7 +72,7 @@ export default function Projects() {
         />
         <Card
           githublink={"https://github.com/rayen-creator/Kadem-web-app"}
-          image={consulting}
+          image={placeholder}
           title={"Kadem wep app"}
           description="Kadem is an academic project build for student to help them explore
         professtionnel life finding new oppurtunty as intern or as employee
@@ -87,148 +87,6 @@ export default function Projects() {
             <GrMysql className="hover:text-green-400" />,
           ]}
         />
-
-        {/* <div className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
-          <div className="flex justify-center">
-            <Image
-              src={farmsanctuarydelivery}
-              width={150}
-              height={150}
-              alt="farm_sanctuary_delivery"
-            />
-          </div>{" "}
-          <h3 className="text-lg font-medium pt-8 pb-2">
-            Farm sanctuary delivery
-          </h3>
-          <p className="py-2 text-justify">
-            FarmSanctuary Delivery is a purpose-built application designed
-            specifically for delivery agents operating within the farm
-            sanctuary.
-          </p>
-          <h4 className="py-4 text-teal-600">Stack</h4>
-          <div className="flex justify-center items-end gap-4 text-4xl ">
-            <p className="text-gray-600 py-1">
-              <SiFlutter className="hover:text-cyan-500" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiGraphql className="hover:text-pink-400" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiExpress className="hover:text-black" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiMongodb className="hover:text-green-400" />
-            </p>
-          </div>
-          <h4 className="py-4 text-teal-600">Github repository </h4>
-          <div className="flex justify-center ">
-            <a
-              className="text-gray-600 py-1 cursor-pointer hover:text-black"
-              href="https://github.com/rayen-creator/farm_sanctuary_delivery"
-              target="_blank"
-            >
-              <div className="flex items-center border-2 rounded-md shadow-md p-1 ">
-                <AiFillGithub className="text-4xl hover:text-black" />
-              </div>{" "}
-            </a>
-          </div>
-        </div>
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
-          <div className="flex justify-center">
-            <Image src={sahti} width={150} height={150} alt="sahti" />
-          </div>{" "}
-          <h3 className="text-lg font-medium pt-8 pb-2">Sahti </h3>
-          <p className="text-justify py-2">
-            Sahti is a cross platform app designed to help people attend
-            coaching course online and get in touch with nutritionist in order
-            to help them get the right diet , the app also offer a online shop
-            for athletes to get their equipements and supplies .
-          </p>
-          <h4 className="py-4 text-teal-600">Stack</h4>
-          <div className="flex justify-center items-end gap-4 text-4xl ">
-            <p className="text-gray-600 py-1">
-              {" "}
-              <FaSymfony className="hover:text-black" />{" "}
-            </p>
-            <p className="text-gray-600 py-1">
-              <FaJava className="hover:text-blue-400" />{" "}
-            </p>
-            <p className="text-gray-600 py-1">
-              <GrMysql className="hover:text-blue-600" />{" "}
-            </p>
-          </div>
-          <h4 className="py-4 text-teal-600">Github repository </h4>
-          <div className="flex justify-center items-end gap-1 ">
-            <a
-              className="text-gray-600 py-1 cursor-pointer hover:text-black"
-              href="https://github.com/rayen-creator/SahtiAPPWeb"
-              target="_blank"
-            >
-              <div className="flex items-center border-2 rounded-md shadow-md p-1 ">
-                <span className="text-sm">Web</span>
-                <AiFillGithub className="text-4xl " />
-              </div>{" "}
-            </a>
-            <a
-              className="text-gray-600 py-1 cursor-pointer hover:text-black"
-              href="https://github.com/rayen-creator/SahtiAppDektop"
-              target="_blank"
-            >
-              <div className="flex items-center border-2 rounded-md shadow-md p-1 ">
-                <span className="text-sm">Desktop</span>
-                <AiFillGithub className="text-4xl hover:text-black" />
-              </div>{" "}
-            </a>
-            <a
-              className="text-gray-600 py-1 cursor-pointer hover:text-black"
-              href="https://github.com/rayen-creator/SahtiAPPMobile"
-              target="_blank"
-            >
-              <div className="flex items-center border-2 rounded-md shadow-md p-1 ">
-                <span className="text-sm">Mobile</span>
-                <AiFillGithub className="text-4xl hover:text-black" />
-              </div>{" "}
-            </a>
-          </div>
-        </div>
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
-          <div className="flex justify-center">
-            <Image src={consulting} width={100} height={100} alt="kademapp" />
-          </div>{" "}
-          <h3 className="text-lg font-medium pt-8 pb-2">Kadem web app</h3>
-          <p className="py-2 text-justify">
-            Kadem is an academic project build for student to help them explore
-            professtionnel life finding new oppurtunty as intern or as employee
-            as well.
-          </p>
-          <h4 className="py-4 text-teal-600">Stack</h4>
-          <div className="flex justify-center items-end gap-4 text-4xl ">
-            <p className="text-gray-600 py-1">
-              <SiAngular className="hover:text-red-500" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiExpress className="hover:text-black" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <SiSpring className="hover:text-green-600" />
-            </p>
-            <p className="text-gray-600 py-1">
-              <GrMysql className="hover:text-green-400" />
-            </p>
-          </div>
-          <h4 className="py-4 text-teal-600">Github repository </h4>
-          <div className="flex justify-center ">
-            <a
-              className="text-gray-600 py-1 cursor-pointer hover:text-black"
-              href="https://github.com/rayen-creator/farm_sanctuary"
-              target="_blank"
-            >
-              <div className="flex items-center border-2 rounded-md shadow-md p-1 ">
-                <AiFillGithub className="text-4xl hover:text-black" />
-              </div>{" "}
-            </a>
-          </div>
-        </div> */}
       </div>
     </>
   );

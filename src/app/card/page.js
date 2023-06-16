@@ -1,19 +1,11 @@
 import { AiFillGithub } from "react-icons/ai";
-import {
-  SiAngular,
-  SiExpress,
-  SiFlask,
-  SiGraphql,
-  SiMongodb,
-} from "react-icons/si";
-import sahti from "../../../public/SAHTI_without_bg.png";
 import Image from "next/image";
 
 export default function Card({ githublink, image, title, description, stack }) {
   return (
     <>
       <div className=" rounded-md text-center my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
-        <div className="shadow-inner p-1 bg-gray-100 rounded-xl">
+        <div className="shadow-inner p-1 bg-gray-100 rounded-xl ">
           <span>
             <a
               className="text-gray-600 py-1 cursor-pointer float-left hover:text-black"
@@ -25,8 +17,8 @@ export default function Card({ githublink, image, title, description, stack }) {
               </div>{" "}
             </a>
           </span>
-          <div className="flex justify-center">
-            <Image src={image} width={150} height={150} alt="farm_sanctuary" />
+          <div className="flex justify-center p-1">
+            <Image src={image} width={150} height={150} alt="image" />
           </div>
         </div>{" "}
         <div className="shadow-lg pt-1 px-7 pb-7 rounded-md h-[350px] flex flex-col">
