@@ -1,6 +1,6 @@
 "use client";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import ScrollToTop from "./scrollToTop/page";
 import Footer from "./footer/page";
 import Header from "./header/page";
@@ -16,17 +16,18 @@ export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
+
   const navLinks = [
     {
-      id: "about",
+      id: "About",
       title: "About",
     },
     {
-      id: "work",
-      title: "Work",
+      id: "Projects",
+      title: "Projects",
     },
     {
-      id: "contact",
+      id: "Contact",
       title: "Contact",
     },
   ];
@@ -39,27 +40,13 @@ export default function Home() {
             <a href="#" onClick={() => setActive("")}
             > Develped by Rayen</a>
           </h1>
+
           <ul className='list-none hidden sm:flex flex-row gap-10'>
-
-            {/* <ul className="flex items-center">
-          
-
-            <li>
-                <a
-                  className=" bg-gradient-to-t from-cyan-500 to-teal-500  text-white px-4 py-2 border-none rounded-md ml-8 "
-                  href="/CV.pdf"
-                  download="CV"
-                >
-                  Resume
-                </a>{" "}
-              </li>
-          </ul> */}
-
             {navLinks.map((nav) => (
 
               <li
                 key={nav.id}
-                className={`${active === nav.title ? " underline" : "text-secondary"
+                className={`${active === nav.title ? " " : "text-secondary"
                   } hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600`}
                 onClick={() => setActive(nav.title)}
               >
@@ -82,24 +69,27 @@ export default function Home() {
               </li>
             )}
           </ul>
-          <div className="sm:hidden flex flex-1 justify-end items-center">
+
+          <div className="sm:hidden flex flex-1 justify-end items-center ">
             <Image src={toggle ? closewindow : menu}
               alt="menu"
-              className={`${darkMode ? '' : 'bg-black fill-black text-black'} w-[28px] h-[28px] object-contain cursor-pointer  `}
+              className={` w-[28px] h-[28px] object-contain cursor-pointer  `}
               onClick={() => setToggle(!toggle)}
             />
+
+
             <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient bg-transparent absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl dark:bg-gradient-to-t from-gray-800 to-gray-400  `}>
               <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
                 {navLinks.map((link) => (
                   <li
                     key={link.id}
-                    className={`  ${active === link.title ? "text-gray-400 underline" : ""
+                    className={`  ${active === link.title ? "text-gray-400 " : ""
                       }  font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white `}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(link.title);
                     }}>
-                    <a href={`#${link.id}`}>  {link.title}</a>
+                    <a href={`#${link.id}`} >  {link.title}</a>
                   </li>
                 ))}
               </ul>
@@ -128,16 +118,16 @@ export default function Home() {
         </nav>
         <div className="px-10 md:px-20 lg:px-40 ">
 
-          <section className=" ">
+          <section className="min-h-screen ">
             <Header />
           </section>
-          <section id="about" className=" py-4 ">
+          <section id="About" className="min-h-screen flex items-center justify-center ">
             <Aboutme />
           </section>
-          <section id="" className=" pt-5">
+          <section id="Projects" className="min-h-screen ">
             <Projects />
           </section>
-          <section id="" className="">
+          <section id="Technologies" className="py-10" >
             <div>
               <h3 className="text-3xl font-bold py-1 dark:text-white">Technologies</h3>
             </div>
@@ -145,7 +135,7 @@ export default function Home() {
               <Carousel />
             </div>
           </section>
-          <section id="" className="">
+          <section id="Contact" className="py-10" >
             <Contact />
           </section>
           <ScrollToTop />
