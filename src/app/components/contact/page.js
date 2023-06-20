@@ -9,16 +9,16 @@ export default function Contact() {
             </h3>
             <div className="grid grid-cols-1  md:grid-cols-2 gap-4">
                 <div className="col-span-1">
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="col-span-2 ">
+                    <div class="grid grid-cols-1  md:grid-cols-2 gap-3">
+                        <div class="md:col-span-2 ">
                             <div className=" shadow-lg  shadow-slate-200 text-center py-10 rounded-md my-1 dark:bg-white text-black  dark:shadow-none ">
                                 <div className="flex  justify-center ">
                                     <div className="border rounded-full p-4 text-gray-600 ">
-                                        <BsShareFill className="text-3xl " />
+                                        <BsShareFill className="text-xl md:text-3xl " />
 
                                     </div>
                                 </div>
-                                <h3 className="text-xl p-2 font-bold  text-gray-600">Social Profiles</h3>
+                                <h3 className="text-md p-2 font-bold  text-gray-600 md:text-xl">Social Profiles</h3>
                                 <div className="text-2xl flex justify-center gap-4 py-3 text-gray-600">
 
 
@@ -50,12 +50,12 @@ export default function Contact() {
                             <div className=" shadow-lg  shadow-slate-200 text-center p-10 rounded-xl my-1 dark:bg-white text-black  dark:shadow-none ">
                                 <div className="flex  justify-center ">
                                     <div className="border rounded-full p-4 text-gray-600 ">
-                                        <AiOutlineMail className="text-center" />
+                                        <AiOutlineMail className="text-xl md:text-3xl" />
 
                                     </div>
                                 </div>
-                                <h3 className="text-xl p-2 font-bold  text-gray-600">Email Me</h3>
-                                <h5>oueslati.rayen@esprit.tn</h5>
+                                <h3 className="text-md p-2 font-bold  text-gray-600 md:text-xl">Email Me</h3>
+                                <h5 className="text-sm  p-2 text-gray-600   md:text-md">oueslati.rayen@esprit.tn</h5>
                             </div>
 
                         </div>
@@ -63,12 +63,11 @@ export default function Contact() {
                             <div className=" shadow-lg  shadow-slate-200 text-center p-10 rounded-xl my-1 dark:bg-white text-black  dark:shadow-none   ">
                                 <div className="flex  justify-center ">
                                     <div className="border rounded-full p-4 text-gray-600 ">
-                                        <FiPhoneCall className="text-center" />
-
+                                        <FiPhoneCall className="text-xl md:text-3xl" />
                                     </div>
                                 </div>
-                                <h3 className="text-xl p-2 font-bold   text-gray-600">Call Me</h3>
-                                <h5>+216 52 547 930</h5>
+                                <h3 className="text-md p-2 font-bold md:text-xl  text-gray-600">Call Me</h3>
+                                <h5 className="text-sm p-2 text-gray-600  md:text-md">+216 52 547 930</h5>
                             </div>
 
                         </div>
@@ -76,7 +75,7 @@ export default function Contact() {
                     </div>
                 </div>
                 <div className="col-span-1">
-                    <div className="shadow-lg  shadow-slate-200 py-10 rounded-md my-10 dark:bg-white text-black  dark:shadow-none   ">
+                    <div className="shadow-lg  shadow-slate-200 py-10 rounded-md   dark:bg-white text-black  dark:shadow-none   ">
                         <form className="px-6 py-4">
                             <div className="grid grid-cols-2 mb-4">
                                 <div className="mr-1">

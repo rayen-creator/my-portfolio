@@ -109,24 +109,24 @@ export default function Home() {
         </nav>
         <div className="px-10 md:px-20 lg:px-40 ">
 
-          <section id="header" className=" my-20">
+          <section id="header" className="my-36 md:my-20">
             <Header />
           </section>
-          <section id="About" className=" my-44 ">
+          <section id="About" className="my-20  md:my-44 ">
             <Aboutme />
           </section>
-          <section id="Projects" className="my-20">
+          <section id="Projects" className="my-20 md:my-20">
             <Projects />
           </section>
-          <section id="Technologies" className="my-20" >
+          <section id="Technologies" className="my-20 md:my-20" >
             <div>
               <h3 className="text-3xl font-bold py-1 dark:text-white">Technologies</h3>
             </div>
-            <div className="py-10 pl-20">
+            <div className="py-10 md:pl-20 ">
               <Carousel />
             </div>
           </section>
-          <section id="Contact" className="my-20" >
+          <section id="Contact" className="my-20 md:my-20" >
             <Contact />
           </section>
           <ScrollToTop />

@@ -7,7 +7,7 @@ export default function Aboutme() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 divide-xs">
         <div className="col-span-1">
-          <h4 className="text-3xl text-center font-medium py-1 dark:text-white">
+          <h4 className="text-3xl text-center font-medium py-2 dark:text-white">
             Who AM I ?{" "}
           </h4>
           <p className="text-md py-14 px-7  text-justify leading-8 text-gray-600 md:text-xl max-w-xl mx-auto dark:text-gray-400">

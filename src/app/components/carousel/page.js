@@ -26,7 +26,7 @@ const Carousel = () => {
     return (
         <>
             <Swiper
-                spaceBetween={30}
+                spaceBetween={32}
                 slidesPerView={5}
                 autoplay={{
                     delay: 1500,
