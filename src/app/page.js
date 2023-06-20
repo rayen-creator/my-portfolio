@@ -12,7 +12,7 @@ import Image from "next/image";
 import closewindow from "../../public/close.svg";
 import menu from "../../public/menu.svg"
 import { Link } from "react-scroll";
-import {SunIcon,MoonIcon} from "./Icon/page";
+import {SunIcon,MoonIcon} from "./../Icon/page";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
