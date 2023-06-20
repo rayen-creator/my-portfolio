@@ -1,13 +1,13 @@
 "use client";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { React, useState } from "react";
-import ScrollToTop from "./scrollToTop/page";
-import Footer from "./footer/page";
-import Header from "./header/page";
-import Contact from "./contact/page";
-import Projects from "./projects/page.js";
-import Aboutme from "./aboutme/page";
-import Carousel from "./carousel/page";
+import ScrollToTop from "./components/scrollToTop/page";
+import Footer from "./components/footer/page";
+import Header from "./components/header/page";
+import Contact from "./components/contact/page";
+import Projects from "./components/projects/page.js";
+import Aboutme from "./components/aboutme/page";
+import Carousel from "./components/carousel/page";
 import Image from "next/image";
 import closewindow from "../../public/close.svg";
 import menu from "../../public/menu.svg"

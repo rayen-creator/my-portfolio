@@ -6,9 +6,7 @@ import {
   AiFillLinkedin,
   AiFillTwitterSquare,
 } from "react-icons/ai";
-import deved from "../../../public/dev-ed-wave.png";
 import Typewriter from "typewriter-effect";
-import laptop from "../../../public/laptop.jpg"
 export default function Header() {
 
   return (
