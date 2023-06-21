@@ -1,6 +1,6 @@
 "use client";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { React, useState } from "react";
+import { React, useEffect, useRef, useState } from "react";
 import ScrollToTop from "./components/scrollToTop/page";
 import Footer from "./components/footer/page";
 import Header from "./components/header/page";
@@ -10,37 +10,96 @@ import Aboutme from "./components/aboutme/page";
 import Carousel from "./components/carousel/page";
 import Image from "next/image";
 import closewindow from "../../public/close.svg";
-import menu from "../../public/menu.svg"
+import menu from "../../public/menu.svg";
 import { Link } from "react-scroll";
-import {SunIcon,MoonIcon} from "./../Icon/page";
+import { SunIcon, MoonIcon } from "./../Icon/page";
+import Reveal from "./components/Reveal/page";
+import Technologies from "./components/Technolgies/page";
+
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [toggle, setToggle] = useState(false);
+
 
   return (
     <main className={`${darkMode ? "dark" : ""} `}>
       <div className=" dark:bg-gray-900">
-        <nav className=" px-10 md:px-20 lg:px-40 sticky top-0 z-20 py-10 mb-12 flex justify-between bg-white dark:bg-gray-900 ">
-
+        <nav className=" px-10 md:px-20 lg:px-40 sticky top-0 z-20 py-10 mb-12 flex justify-between bg-transparent backdrop-blur  dark:bg-gray-900 ">
           <h1 className="text-xl font-burtons cursor-pointer dark:text-white">
-            <Link to={'header'} spy={true} smooth={true} offset={-200} duration={100} > 
-            Rayen Oueslati
+            <Link
+              to={"header"}
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={100}
+            >
+              Rayen Oueslati
             </Link>
           </h1>
 
-          <ul className='list-none hidden sm:flex flex-row gap-10'>
-            <li className={'hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600'}  >
-              <Link to={'About'} spy={true} smooth={true} offset={-85} duration={100} > About</Link>
+          <ul className="list-none hidden sm:flex flex-row gap-10">
+            <li
+              className={
+                "hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600"
+              }
+            >
+              <Link
+                to={"About"}
+                spy={true}
+                smooth={true}
+                offset={-85}
+                duration={100}
+              >
+                {" "}
+                About
+              </Link>
             </li>
-            <li className={'hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600'}  >
-              <Link to={'Projects'} spy={true} smooth={true} offset={-100} duration={100} > Projects</Link>
+            <li
+              className={
+                "hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600"
+              }
+            >
+              <Link
+                to={"Projects"}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                {" "}
+                Projects
+              </Link>
             </li>
-            <li className={'hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600'}  >
-              <Link to={'Technologies'} spy={true} smooth={true} offset={-100} duration={100} >Technologies</Link>
+            <li
+              className={
+                "hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600"
+              }
+            >
+              <Link
+                to={"Technologies"}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                Technologies
+              </Link>
             </li>
-            <li className={'hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600'}  >
-              <Link to={'Contact'} spy={true} smooth={true} offset={-100} duration={100} >Contact </Link>
+            <li
+              className={
+                "hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600"
+              }
+            >
+              <Link
+                to={"Contact"}
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+              >
+                Contact{" "}
+              </Link>
             </li>
 
             {!darkMode ? (
@@ -55,8 +114,8 @@ export default function Home() {
                 <MoonIcon
                   onClick={() => setDarkMode(false)}
                   className="rounded-full p-1 bg-white cursor-pointer text-3xl text-black hover:text-yellow-400"
-                />             
-                   {/* <BsFillSunFill
+                />
+                {/* <BsFillSunFill
                   onClick={() => setDarkMode(false)}
                   className="cursor-pointer text-2xl text-white hover:text-yellow-400"
                 /> */}
@@ -65,24 +124,78 @@ export default function Home() {
           </ul>
 
           <div className="sm:hidden flex flex-1 justify-end items-center ">
-            <Image src={toggle ? closewindow : menu}
+            <Image
+              src={toggle ? closewindow : menu}
               alt="menu"
               className={` w-[28px] h-[28px] object-contain cursor-pointer  `}
               onClick={() => setToggle(!toggle)}
             />
-            <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient bg-transparent absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl dark:bg-gradient-to-t from-gray-800 to-gray-400  `}>
-              <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
-                <li className={'font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white'}  >
-                  <Link to={'About'} spy={true} smooth={true} offset={-85} duration={100} > About</Link>
+            <div
+              className={`${!toggle ? "hidden" : "flex"
+                } p-6 black-gradient bg-transparent absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl dark:bg-gradient-to-t from-gray-800 to-gray-400  `}
+            >
+              <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
+                <li
+                  className={
+                    "font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white"
+                  }
+                >
+                  <Link
+                    to={"About"}
+                    spy={true}
+                    smooth={true}
+                    offset={-85}
+                    duration={100}
+                  >
+                    {" "}
+                    About
+                  </Link>
                 </li>
-                <li className={'font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white'}  >
-                  <Link to={'Projects'} spy={true} smooth={true} offset={-95} duration={100} > Projects</Link>
+                <li
+                  className={
+                    "font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white"
+                  }
+                >
+                  <Link
+                    to={"Projects"}
+                    spy={true}
+                    smooth={true}
+                    offset={-95}
+                    duration={100}
+                  >
+                    {" "}
+                    Projects
+                  </Link>
                 </li>
-                <li className={'font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white'}  >
-                  <Link to={'Technologies'} spy={true} smooth={true} offset={-95} duration={100} >Technologies</Link>
+                <li
+                  className={
+                    "font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white"
+                  }
+                >
+                  <Link
+                    to={"Technologies"}
+                    spy={true}
+                    smooth={true}
+                    offset={-95}
+                    duration={100}
+                  >
+                    Technologies
+                  </Link>
                 </li>
-                <li className={'font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white'}  >
-                  <Link to={'Contact'} spy={true} smooth={true} offset={-85} duration={100} >Contact </Link>
+                <li
+                  className={
+                    "font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white"
+                  }
+                >
+                  <Link
+                    to={"Contact"}
+                    spy={true}
+                    smooth={true}
+                    offset={-85}
+                    duration={100}
+                  >
+                    Contact{" "}
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -103,32 +216,36 @@ export default function Home() {
                 </div>
               )}
             </div>
-
           </div>
-
         </nav>
         <div className="px-10 md:px-20 lg:px-40 ">
-
-          <section id="header" className="my-36 md:my-20">
-            <Header />
-          </section>
-          <section id="About" className="my-20  md:my-44 ">
+          <Reveal>
+            <section id="header" className="my-36 md:my-20">
+              <Header />
+            </section>
+          </Reveal>
+          <Reveal>
+            <section id="About" className="my-20  md:my-44 ">
             <Aboutme />
           </section>
-          <section id="Projects" className="my-20 md:my-20">
+          </Reveal>
+          <Reveal>
+            <section id="Projects" className="my-20 md:my-20">
             <Projects />
           </section>
-          <section id="Technologies" className="my-20 md:my-20" >
-            <div>
-              <h3 className="text-3xl font-bold py-1 dark:text-white">Technologies</h3>
-            </div>
-            <div className="py-10 md:pl-20 ">
-              <Carousel />
-            </div>
+          </Reveal>
+            <section id="Technologies" className="my-20 md:my-20">
+          <Technologies/>
           </section>
-          <section id="Contact" className="my-20 md:my-20" >
+            <section id="Contact" className="my-20 md:my-20">
             <Contact />
           </section>
+
+
+
+
+
+
           <ScrollToTop />
         </div>
         <Footer />

@@ -14,11 +14,13 @@ import farmsanctuary from "../../../../public/farm-sanctuary.png";
 import farmsanctuarydelivery from "../../../../public/farm-sanctuary-delivery.png";
 import sahti from "../../../../public/SAHTI_without_bg.png";
 import Card from "../card/page";
+import Title from "../Title/page";
 export default function Projects() {
   return (
     <>
       <div>
-        <h3 className="text-3xl font-bold py-1 dark:text-white">Projects</h3>
+        <Title title={"Projects"} />
+
         <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-400">
           Over the years, as an IT engineer and full-stack developer, I have had
           the opportunity to work on several projects that have enriched my
@@ -28,7 +30,7 @@ export default function Projects() {
           on:
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-2 ">
         <Card
           githublink={"https://github.com/rayen-creator/farm_sanctuary"}
           image={farmsanctuary}
@@ -73,7 +75,7 @@ export default function Projects() {
         <Card
           githublink={"https://github.com/rayen-creator/Kadem-web-app"}
           image={placeholder}
-          title={"Kadem wep app"}
+          title={"Kadem"}
           description="Kadem is an academic project build for student to help them explore
         professtionnel life finding new oppurtunty as intern or as employee
         as well."

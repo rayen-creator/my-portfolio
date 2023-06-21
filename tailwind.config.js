@@ -9,8 +9,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        burtons: "burtons",
+        burtons:"burtons",
+        Poppins_Regular:"Poppins_Regular",
+        Poppins_SemiBold:"Poppins_SemiBold"
       },
+      colors:{
+        primary:'#0aff9d',
+      }
     },
   },
   plugins: [],

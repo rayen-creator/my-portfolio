@@ -18,20 +18,20 @@ export default function Card({ githublink, image, title, description, stack }) {
             </a>
           </span>
           <div className="flex justify-center p-1">
-            <Image src={image} width={150} height={150} alt="image" />
+            <Image src={image} width={150} height={150} alt="image" placeholder="blur"/>
           </div>
         </div>{" "}
-        <div className="shadow-lg pt-1 px-7 pb-7 rounded-md h-[350px] flex flex-col">
+        <div className="shadow-lg pt-1 px-7 pb-7 rounded-md h-[350px] flex flex-col  lg:h-[390px]">
           <div className="relative flex py-5 items-center">
             <div className="flex-grow border-t border-gray-400"></div>
             <span className="flex-shrink mx-4  text-lg font-medium">
-              <h3>{title}</h3>
+              <h3 className="lg:break-all">{title}</h3>
             </span>
             <div className="flex-grow border-t border-gray-400"></div>
           </div>
           <p className="py-2 text-justify">{description}</p>
           <h4 className="py-4 text-teal-600 mt-auto">Stack</h4>
-          <div className="flex justify-center items-end gap-4 text-4xl">
+          <div className="flex justify-center items-end gap-3 text-4xl lg:text-2xl">
             {stack && stack.length > 0 && (
               <>
                 <p className="text-gray-600 py-1">{stack[0]}</p>
