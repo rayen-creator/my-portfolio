@@ -1,7 +1,7 @@
 "use client";
-import Reveal from "../components/reveal";
-import Title from "../components/title";
-import Carousel from "../components/carousel";
+import Reveal from "../../components/reveal";
+import Title from "../../components/title";
+import Carousel from "../../components/carousel";
 
 const Technologies = () => {
   return (

@@ -1,7 +1,7 @@
 "use client";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { React, useEffect, useRef, useState } from "react";
-import ScrollToTop from "./components/scrollToTop";
+import ScrollToTop from "../components/scrollToTop";
 import Footer from "./pages/footer";
 import Header from "./pages/header";
 import Contact from "./pages/contact";
@@ -11,7 +11,7 @@ import Image from "next/image";
 import closewindow from "../../public/close.svg";
 import menu from "../../public/menu.svg";
 import { Link } from "react-scroll";
-import { SunIcon, MoonIcon } from "./components/icon";
+import { SunIcon, MoonIcon } from "../components/icon";
 import Technologies from "./pages/technologies";
 
 

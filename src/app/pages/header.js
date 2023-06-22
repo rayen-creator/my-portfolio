@@ -9,7 +9,7 @@ import {
   AiFillRedditCircle
 } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
-import Reveal from "../components/reveal";
+import Reveal from "../../components/reveal";
 
 
 export default function Header() {

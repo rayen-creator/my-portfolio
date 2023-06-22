@@ -8,8 +8,8 @@ import {
   AiOutlineMail,
 } from "react-icons/ai";
 import { FiPhoneCall } from "react-icons/fi";
-import Reveal from "../components/reveal";
-import Title from "../components/title";
+import Reveal from "../../components/reveal";
+import Title from "../../components/title";
 export default function Contact() {
   return (
     <>
