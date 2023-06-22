@@ -1,5 +1,5 @@
 "use client";
-import ComputersCanvas from "@/app/canvas/moon";
+import ComputersCanvas from "@/app/utils/canvas/moon";
 import { useState } from "react";
 import {
   AiFillGithub,
@@ -9,7 +9,7 @@ import {
   AiFillRedditCircle
 } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
-import Reveal from "../Reveal/page";
+import Reveal from "../components/reveal";
 
 
 export default function Header() {

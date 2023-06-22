@@ -1,5 +1,5 @@
-import Reveal from "../Reveal/page";
-import Title from "../Title/page";
+import Reveal from "../components/reveal";
+import Title from "../components/title";
 
 export default function Aboutme() {
   return (

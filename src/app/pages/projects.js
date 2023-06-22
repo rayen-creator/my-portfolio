@@ -9,12 +9,12 @@ import {
   SiGraphql,
   SiFlask,
 } from "react-icons/si";
-import placeholder from "../../../../public/design.png";
-import farmsanctuary from "../../../../public/farm-sanctuary.png";
-import farmsanctuarydelivery from "../../../../public/farm-sanctuary-delivery.png";
-import sahti from "../../../../public/SAHTI_without_bg.png";
-import Card from "../card/page";
-import Title from "../Title/page";
+import placeholder from "../../../public/design.png";
+import farmsanctuary from "../../../public/farm-sanctuary.png";
+import farmsanctuarydelivery from "../../../public/farm-sanctuary-delivery.png";
+import sahti from "../../../public/SAHTI_without_bg.png";
+import Card from "../components/cards";
+import Title from "../components/title";
 export default function Projects() {
   return (
     <>
