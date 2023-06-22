@@ -13,10 +13,12 @@ import menu from "../../public/menu.svg";
 import { Link } from "react-scroll";
 import { SunIcon, MoonIcon } from "../components/icon";
 import Technologies from "./pages/technologies";
+import { useThemeContext } from "./utils/context/theme";
 
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useThemeContext();
+
   const [toggle, setToggle] = useState(false);
 
 
