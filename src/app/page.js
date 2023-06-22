@@ -12,7 +12,7 @@ import Image from "next/image";
 import closewindow from "../../public/close.svg";
 import menu from "../../public/menu.svg";
 import { Link } from "react-scroll";
-import { SunIcon, MoonIcon } from "./components/Icon/page";
+import { SunIcon, MoonIcon } from "./components/icon";
 import Reveal from "./components/Reveal/page";
 import Technologies from "./components/Technolgies/page";
 
