@@ -12,7 +12,7 @@ import Image from "next/image";
 import closewindow from "../../public/close.svg";
 import menu from "../../public/menu.svg";
 import { Link } from "react-scroll";
-import { SunIcon, MoonIcon } from "./../Icon/page";
+import { SunIcon, MoonIcon } from "./components/Icon/page";
 import Reveal from "./components/Reveal/page";
 import Technologies from "./components/Technolgies/page";
 
@@ -25,7 +25,7 @@ export default function Home() {
   return (
     <main className={`${darkMode ? "dark" : ""} `}>
       <div className=" dark:bg-gray-900">
-        <nav className=" px-10 md:px-20 lg:px-40 sticky top-0 z-20 py-10 mb-12 flex justify-between bg-transparent backdrop-blur  dark:bg-gray-900 ">
+      <nav className=" px-10 md:px-20 lg:px-40 sticky top-0 z-20 py-10 mb-12 flex justify-between bg-transparent backdrop-blur  dark:bg-gray-900 ">
           <h1 className="text-xl font-burtons cursor-pointer dark:text-white">
             <Link
               to={"header"}
@@ -218,34 +218,22 @@ export default function Home() {
             </div>
           </div>
         </nav>
-        <div className="px-10 md:px-20 lg:px-40 ">
-          <Reveal>
-            <section id="header" className="my-36 md:my-20">
+        <div className="px-10 md:px-20  lg:px-40 ">
+        <section id="header" className="md:min-h-[470px] md:flex items-center ">
               <Header />
-            </section>
-          </Reveal>
-          <Reveal>
-            <section id="About" className="my-20  md:my-44 ">
+            </section> 
+            <section id="About" className="my-20  md:mt:44 ">
             <Aboutme />
           </section>
-          </Reveal>
-          <Reveal>
-            <section id="Projects" className="my-20 md:my-20">
+            <section id="Projects" className="my-1">
             <Projects />
           </section>
-          </Reveal>
-            <section id="Technologies" className="my-20 md:my-20">
+            <section id="Technologies" className="my-1">
           <Technologies/>
           </section>
-            <section id="Contact" className="my-20 md:my-20">
+            <section id="Contact" className="mt-1 mb-10 ">
             <Contact />
           </section>
-
-
-
-
-
-
           <ScrollToTop />
         </div>
         <Footer />

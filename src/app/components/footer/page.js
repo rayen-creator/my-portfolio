@@ -3,7 +3,7 @@ import { AiFillBehanceCircle, AiFillGithub, AiFillLinkedin, AiFillRedditCircle, 
 export default function Footer() {
   return (
     <footer>
-      <div className="text-center p-10  dark: text-gray-100 bg-gray-600 dark:bg-gray-900">
+      <div className="text-center p-10  dark: text-gray-100 bg-black dark:bg-gray-900">
         <div className="py-1">
           <h3 className="text-3xl font-bold text-gray-300">Rayen Oueslati</h3>
         </div>

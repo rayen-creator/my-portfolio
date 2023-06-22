@@ -10,8 +10,6 @@ const Technologies = () => {
       <Reveal>
         <h3 className="text-3xl font-bold py-1 dark:text-white">
         <Title title={"Technologies"} />
-
-          
         </h3>
         </Reveal>
       </div>

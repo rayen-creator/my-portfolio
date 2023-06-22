@@ -6,7 +6,6 @@ export default function Aboutme() {
     <>
     <Reveal>
     <Title title={"About"} />
-    
     </Reveal>
       <div className="grid grid-cols-1 md:grid-cols-2 divide-xs">
         <div className="col-span-1">

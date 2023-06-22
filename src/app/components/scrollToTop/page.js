@@ -32,7 +32,7 @@ const ScrollToTop = () => {
           }`}
         onClick={scrollToTop}
       > 
-       <AiOutlineArrowUp className=' text-black text-3xl dark:text-white'/>
+       <AiOutlineArrowUp className=' text-primary text-3xl dark:text-primary'/>
       </button>
     )
 }
