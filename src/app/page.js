@@ -115,10 +115,7 @@ export default function Home() {
                   onClick={() => setDarkMode(false)}
                   className="rounded-full p-1 bg-white cursor-pointer text-3xl text-black hover:text-yellow-400"
                 />
-                {/* <BsFillSunFill
-                  onClick={() => setDarkMode(false)}
-                  className="cursor-pointer text-2xl text-white hover:text-yellow-400"
-                /> */}
+               
               </li>
             )}
           </ul>
