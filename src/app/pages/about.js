@@ -68,22 +68,28 @@ export default function About() {
                 Express
               </span>
               <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                Angular
+                </span>
+                <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
+                Reactjs
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
                 MongoDB
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                html
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                css
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                mysql
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                Graphql
+                </span>
+                <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
+                RestAPI
                 </span>
               </div>
             </div>
@@ -94,26 +100,24 @@ export default function About() {
               </div>
               <div className="my-5 ">
               <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                Express
+                Nextjs
               </span>
               <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                Tailwindcss
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                flask
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                django
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                figma
                 </span>
                 <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
+                supabase
                 </span>
-                <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                MongoDB
-                </span>
+               
               </div>
             </div>
           </div>

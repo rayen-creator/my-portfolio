@@ -5,9 +5,9 @@ export default function Footer() {
     <footer>
       <div className="text-center p-10  dark: text-gray-100 bg-black dark:bg-gray-900">
         <div className="py-1">
-          <h3 className="text-3xl font-bold text-gray-300">Rayen Oueslati</h3>
+          <h3 className="text-3xl md:text-3xl font-bold text-gray-300">Rayen Oueslati</h3>
         </div>
-        <div className="text-3xl flex justify-center gap-4 py-10 ">
+        <div className="text-2xl md:text-3xl flex justify-center gap-4 py-10 ">
           <a href="https://github.com/rayen-creator" target="_blank">
             <AiFillGithub className="cursor-pointer hover:text-black" />
           </a>

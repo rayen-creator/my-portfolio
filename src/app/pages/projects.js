@@ -21,7 +21,7 @@ export default function Projects() {
       <div>
         <Title title={"Projects"} />
 
-        <p className="text-md py-2 leading-8 text-gray-600 dark:text-gray-400">
+        <p className="font-Poppins_Regular text-md py-2 leading-8 text-black dark:text-gray-300">
           Over the years, as an IT engineer and full-stack developer, I have had
           the opportunity to work on several projects that have enriched my
           experience and knowledge, especially in utilizing the latest and
@@ -30,7 +30,7 @@ export default function Projects() {
           on:
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-4 gap-2 ">
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 ">
         <Card
           githublink={"https://github.com/rayen-creator/farm_sanctuary"}
           image={farmsanctuary}

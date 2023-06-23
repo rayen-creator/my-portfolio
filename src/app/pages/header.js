@@ -41,7 +41,7 @@ export default function Header() {
           </h3>
          </Reveal>
         <Reveal>
-        <div className="text-4xl flex justify-center md:justify-start gap-4 md:py-3 text-gray-600 dark:text-white">
+        <div className="text-2xl md:text-4xl flex justify-center md:justify-start gap-4 md:py-3 text-gray-600 dark:text-white">
             <a href="https://github.com/rayen-creator" target="">
               <AiFillGithub className="cursor-pointer hover:text-black" />
             </a>

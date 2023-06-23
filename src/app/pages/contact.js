@@ -26,7 +26,7 @@ export default function Contact() {
               <Reveal>
                 <div className=" shadow-lg  shadow-slate-200 text-center py-10 rounded-md my-1 dark:bg-white text-black  dark:shadow-none ">
                   <div className="flex  justify-center ">
-                    <div className="border rounded-full p-4 text-gray-600 ">
+                    <div className="border rounded-full p-4 text-gray-600 hover:bg-primary hover:text-white">
                       <BsShareFill className="text-xl md:text-3xl " />
                     </div>
                   </div>
@@ -77,7 +77,7 @@ export default function Contact() {
               <Reveal>
                 <div className=" shadow-lg  shadow-slate-200 text-center p-10 rounded-xl my-1 dark:bg-white text-black  dark:shadow-none ">
                   <div className="flex  justify-center ">
-                    <div className="border rounded-full p-4 text-gray-600 ">
+                    <div className="border rounded-full p-4 text-gray-600 hover:bg-primary hover:text-white ">
                       <AiOutlineMail className="text-xl md:text-3xl" />
                     </div>
                   </div>
@@ -94,11 +94,11 @@ export default function Contact() {
               <Reveal>
                 <div className=" shadow-lg  shadow-slate-200 text-center p-10 rounded-xl my-1 dark:bg-white text-black  dark:shadow-none   ">
                   <div className="flex  justify-center ">
-                    <div className="border rounded-full p-4 text-gray-600 ">
+                    <div className="border rounded-full p-4 text-gray-600 hover:bg-primary hover:text-white ">
                       <FiPhoneCall className="text-xl md:text-3xl" />
                     </div>
                   </div>
-                  <h3 className="text-md p-2 font-Poppins_SemiBold md:text-xl  text-gray-600">
+                  <h3 className="text-md p-2 font-Poppins_SemiBold md:text-xl  text-gray-600 ">
                     Call Me
                   </h3>
                   <h5 className="text-sm p-2 text-gray-600  md:text-md">
@@ -159,7 +159,7 @@ export default function Contact() {
                 </div>
                 <div className="flex justify-center">
                   <button
-                    className="bg-blue-500  hover:bg-blue-700 text-white font-bold py-2 px-14 rounded-full focus:outline-none focus:shadow-outline"
+                    className="bg-primary  hover:bg-green-400  text-white font-bold py-2 px-14 rounded-full focus:outline-none focus:shadow-outline"
                     type="button"
                   >
                     Send
