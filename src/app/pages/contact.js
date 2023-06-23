@@ -73,7 +73,7 @@ export default function Contact() {
                 </div>
               </Reveal>
             </div>
-            <div class="">
+            <div className="">
               <Reveal>
                 <div className=" shadow-lg  shadow-slate-200 text-center p-10 rounded-xl my-1 dark:bg-white text-black  dark:shadow-none ">
                   <div className="flex  justify-center ">
@@ -90,7 +90,7 @@ export default function Contact() {
                 </div>
               </Reveal>
             </div>
-            <div class="">
+            <div className="">
               <Reveal>
                 <div className=" shadow-lg  shadow-slate-200 text-center p-10 rounded-xl my-1 dark:bg-white text-black  dark:shadow-none   ">
                   <div className="flex  justify-center ">

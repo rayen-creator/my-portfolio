@@ -6,7 +6,6 @@ import Footer from "./pages/footer";
 import Header from "./pages/header";
 import Contact from "./pages/contact";
 import Projects from "./pages/projects.js";
-import Aboutme from "./pages/about";
 import Image from "next/image";
 import closewindow from "../../public/close.svg";
 import menu from "../../public/menu.svg";
@@ -14,6 +13,7 @@ import { Link } from "react-scroll";
 import { SunIcon, MoonIcon } from "../components/icon";
 import Technologies from "./pages/technologies";
 import { useThemeContext } from "./utils/context/theme";
+import About from "./pages/about";
 
 
 export default function Home() {
@@ -223,7 +223,7 @@ export default function Home() {
               <Header />
             </section> 
             <section id="About" className="my-20  md:mt:44 ">
-            <Aboutme />
+            <About />
           </section>
             <section id="Projects" className="my-1">
             <Projects />
