@@ -45,7 +45,7 @@ export default function About() {
                 and personal development.
               </p>
             </Reveal>
-            <Reveal>
+            {/* <Reveal>
               <p className="text-black font-Poppins_Regular text-md leading-loose text-justify dark:text-gray-300 break-words">
                 In addition to my technical skills, I bring a strong work ethic,
                 attention to detail, and a dedication to delivering high-quality
@@ -53,7 +53,7 @@ export default function About() {
                 experiences that not only meet clients' expectations but also
                 exceed them.
               </p>
-            </Reveal>
+            </Reveal> */}
           </div>
         </div>
         <div className="col-span-1 float-right">
