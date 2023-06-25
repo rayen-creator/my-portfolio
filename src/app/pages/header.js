@@ -1,47 +1,45 @@
 "use client";
-import ComputersCanvas from "@/app/utils/canvas/moon";
-import { useState } from "react";
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
   AiFillBehanceCircle,
-  AiFillRedditCircle
+  AiFillRedditCircle,
 } from "react-icons/ai";
 import Typewriter from "typewriter-effect";
 import Reveal from "../../components/reveal";
 
-
 export default function Header() {
-
   return (
-    // <Hero/>
-    <div className=" grid grid-cols-1 	 md:grid-cols-2 lg:grid-cols-2  ">
-      <div className=" ">
-        <div className="   text-center md:text-left">
-         <Reveal>
-         <h2 className="text-3xl py-2 text-gray-700 font-Poppins_SemiBold  md:text-7xl lg:text-6xl dark:text-gray-100">
-            Hey , I'm Rayen<span className="text-primary text-3xl  md:text-7xl lg:text-6xl ">.</span>
+    <section id="header" className="flex items-center justify-center min-h-[270px] md:min-h-[470px] lg:min-h-[470px] md:justify-start  ">
+      <div className="text-center md:text-left">
+        <Reveal>
+          <h2 className="text-3xl py-2 text-gray-700 font-Poppins_SemiBold  md:text-7xl lg:text-6xl dark:text-gray-100">
+            Hey , I'm Rayen
+            <span className="text-primary text-3xl  md:text-7xl lg:text-6xl ">
+              .
+            </span>
           </h2>
-         </Reveal>
-         <Reveal>
-         <h3 className="flex justify-center md:justify-start text-2xl py-2 md:text-3xl dark:text-white">
-            <span className="font-Poppins_Regular text-gray-700 	  dark:text-white">I'm </span>
+        </Reveal>
+        <Reveal>
+          <h3 className="flex justify-center md:justify-start text-2xl py-2 md:text-3xl dark:text-white">
+            <span className="font-Poppins_Regular text-gray-700 	  dark:text-white">
+              I'm{" "}
+            </span>
             <span className=" px-1 text-primary  font-Poppins_Regular">
               <Typewriter
                 options={{
                   strings: [" full stack developer", " IT engineer"],
                   autoStart: true,
                   loop: true,
-                  cursor: "|", 
-
+                  cursor: "|",
                 }}
               />
             </span>
           </h3>
-         </Reveal>
+        </Reveal>
         <Reveal>
-        <div className="text-2xl md:text-4xl flex justify-center md:justify-start gap-4 md:py-3 text-gray-600 dark:text-white">
+          <div className="text-2xl md:text-4xl flex justify-center md:justify-start gap-4 md:py-3 text-gray-600 dark:text-white">
             <a href="https://github.com/rayen-creator" target="">
               <AiFillGithub className="cursor-pointer hover:text-black" />
             </a>
@@ -62,9 +60,6 @@ export default function Header() {
             </a>
           </div>
         </Reveal>
-       
-        </div>
-
       </div>
       {/* <div className="text-center pb-4">
           <a href="/CV.pdf" download="CV">
@@ -73,13 +68,8 @@ export default function Header() {
               </span>
             </button>
           </a>
-
         </div> */}
-
-      <div className="w-full h-full mx-auto">
-          {/* <ComputersCanvas /> */}
-      </div>
-
-    </div>
+      {/* <div className="w-full h-full mx-auto"><ComputersCanvas /></div> */}
+    </section>
   );
 }

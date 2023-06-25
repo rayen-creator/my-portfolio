@@ -18,20 +18,11 @@ import Title from "../../components/title";
 import Reveal from "@/components/reveal";
 export default function Projects() {
   return (
-    <>
-      <div>
+    <section id="Projects" className="my-1">
+    <div>
         <Reveal>
           <Title title={"Projects"} />
         </Reveal>
-
-        {/* <p className="font-Poppins_Regular text-md py-2 leading-8 text-black dark:text-gray-300">
-          Over the years, as an IT engineer and full-stack developer, I have had
-          the opportunity to work on several projects that have enriched my
-          experience and knowledge, especially in utilizing the latest and
-          widely adopted technologies.
-          <br /> Allow me to share some of the notable projects I have worked
-          on:
-        </p> */}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 ">
         <Reveal>
@@ -104,6 +95,6 @@ export default function Projects() {
           />
         </Reveal>
       </div>
-    </>
+    </section>
   );
 }

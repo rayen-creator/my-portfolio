@@ -1,12 +1,11 @@
 "use client";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { React, useState } from "react";
-import Image from "next/image";
-import closewindow from "../../public/close.svg";
-import menu from "../../public/menu.svg";
 import { Link } from "react-scroll";
 import { SunIcon, MoonIcon } from "../components/icon";
 import { useThemeContext } from "@/app/utils/context/theme";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useThemeContext();
@@ -109,16 +108,22 @@ const Navbar = () => {
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center ">
-          <Image
-            src={toggle ? closewindow : menu}
-            alt="menu"
-            className={` w-[28px] h-[28px] object-contain cursor-pointer  `}
-            onClick={() => setToggle(!toggle)}
-          />
+          <div className="" onClick={() => setToggle(!toggle)}>
+            {!toggle ? (
+              <div>
+                <GiHamburgerMenu className="text-3xl dark:text-white" />
+              </div>
+            ) : (
+              <div>
+                <AiOutlineClose className="text-3xl dark:text-white" />
+              </div>
+            )}
+          </div>
+
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient bg-transparent absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl dark:bg-gradient-to-t from-gray-800 to-gray-400  `}
+            } p-6 black-gradient bg-gradient-to-t from-gray-800 to-gray-400 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl  `}
           >
             <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               <li

@@ -12,10 +12,9 @@ import Reveal from "../../components/reveal";
 import Title from "../../components/title";
 export default function Contact() {
   return (
-    <>
-      <Reveal>
+    <section id="Contact" className="mt-1 mb-10 ">
+    <Reveal>
         <h3 className="text-3xl font-bold py-1 mb-5 dark:text-white">
-          {/* Let's get in touch */}
           <Title title={"Contact"} />
         </h3>
       </Reveal>
@@ -170,6 +169,6 @@ export default function Contact() {
           </Reveal>
         </div>
       </div>
-    </>
+    </section>
   );
 }
