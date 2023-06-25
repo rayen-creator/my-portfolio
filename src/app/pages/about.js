@@ -3,9 +3,9 @@ import Title from "../../components/title";
 import { SiFuturelearn } from "react-icons/si";
 import { BiCodeAlt } from "react-icons/bi";
 import { currentStack, currentlyLearning } from "@/constants";
+import { Link } from "react-scroll";
 
 export default function About() {
-
   return (
     <section id="About" className="my-20  md:mt:44 ">
       <Reveal>
@@ -47,9 +47,20 @@ export default function About() {
               </p>
             </Reveal>
             <Reveal>
-              <div className="mt-5 ml-5 ">
-                <a href="" className="rounded-lg bg-primary text-black font-Poppins_Regular p-2 text-lg">Hire me</a>
-              </div>
+              <Link
+                to={"Contact"}
+                spy={true}
+                smooth={true}
+                offset={-85}
+                duration={100}
+              >
+                <button className="cursor-pointer text-black font-Poppins_Regular p-2 text-lg relative inline-flex items-center justify-start overflow-hidden transition-all bg-primary rounded-lg hover:bg-primary group">
+                  <span className="w-0 h-0 rounded bg-green-400  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+                  <span className="w-full text-gray-600 transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                    Hire me{" "}
+                  </span>
+                </button>
+              </Link>
             </Reveal>
           </div>
         </div>
@@ -58,8 +69,8 @@ export default function About() {
             <div className="my-10">
               <Reveal>
                 <div className="flex justify-start font-Poppins_SemiBold text-xl text-black dark:text-white">
-                  <BiCodeAlt className="text-3xl text-black bg-primary rounded-md  p-1 mr-2" /> Current
-                  stack
+                  <BiCodeAlt className="text-3xl text-black bg-primary rounded-md  p-1 mr-2" />{" "}
+                  Current stack
                 </div>
               </Reveal>
               <Reveal>
