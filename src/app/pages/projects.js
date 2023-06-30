@@ -16,6 +16,7 @@ import sahti from "../../../public/SAHTI_without_bg.png";
 import Card from "../../components/cards";
 import Title from "../../components/title";
 import Reveal from "@/components/reveal";
+import { projects } from "@/constants";
 export default function Projects() {
   return (
     <section id="Projects" className="my-1">
@@ -25,7 +26,22 @@ export default function Projects() {
         </Reveal>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 ">
-        <Reveal>
+        {
+          projects.map((p)=>(
+            <Reveal>
+              <Card 
+              key={p.title}
+              title={p.title}
+              description={p.description}
+              githublink={p.githublink}
+              image={p.image}
+              stack={p.stack}
+              demolink={p.demolink}
+              />
+            </Reveal>
+          ))
+        }
+        {/* <Reveal>
           <Card
             githublink={"https://github.com/rayen-creator/farm_sanctuary"}
             image={farmsanctuary}
@@ -63,7 +79,7 @@ export default function Projects() {
 
         <Reveal>
           <Card
-            githublink={"https://github.com/rayen-creator/farm_sanctuary"}
+            githublink={"https://github.com/rayen-creator/SahtiAPPWeb"}
             image={sahti}
             title={"Sahti"}
             description="Sahti is a cross platform fitness app that offer online coaching, shop and nutritionist services."
@@ -80,7 +96,7 @@ export default function Projects() {
             githublink={"https://github.com/rayen-creator/Kadem-web-app"}
             image={placeholder}
             title={"Kadem"}
-            description="Kadem is an academic project build for student to help them explore
+            description="Kadem is a  project built for student to help them explore
         professtionnel life finding new oppurtunty as intern or as employee
         as well."
             stack={[
@@ -93,7 +109,7 @@ export default function Projects() {
               <GrMysql className="hover:text-green-400" />,
             ]}
           />
-        </Reveal>
+        </Reveal> */}
       </div>
     </section>
   );
