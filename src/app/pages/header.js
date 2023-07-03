@@ -1,17 +1,14 @@
 "use client";
-import {
-  AiFillGithub,
-  AiFillLinkedin,
-  AiFillTwitterCircle,
-  AiFillBehanceCircle,
-  AiFillRedditCircle,
-} from "react-icons/ai";
 import Typewriter from "typewriter-effect";
 import Reveal from "../../components/reveal";
+import { SocialMediaIconNoBorder } from "@/components/socialMediaIcon";
 
 export default function Header() {
   return (
-    <section id="header" className="flex items-center justify-center min-h-[270px] md:min-h-[470px] lg:min-h-[470px] md:justify-start  ">
+    <section
+      id="header"
+      className="flex items-center justify-center min-h-[270px] md:min-h-[470px] lg:min-h-[470px] md:justify-start  "
+    >
       <div className="text-center md:text-left">
         <Reveal>
           <h2 className="text-3xl py-2 text-gray-700 font-Poppins_SemiBold  md:text-7xl lg:text-6xl dark:text-gray-100">
@@ -40,24 +37,7 @@ export default function Header() {
         </Reveal>
         <Reveal>
           <div className="text-2xl md:text-4xl flex justify-center md:justify-start gap-4 md:py-3 text-gray-600 dark:text-white">
-            <a href="https://github.com/rayen-creator" target="">
-              <AiFillGithub className="cursor-pointer hover:text-black" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/rayen-oueslati-72a55b1b0/"
-              target="_blank"
-            >
-              <AiFillLinkedin className="cursor-pointer hover:text-blue-600" />
-            </a>
-            <a href="https://twitter.com/rayenoueslati8" target="_blank">
-              <AiFillTwitterCircle className="cursor-pointer hover:text-cyan-500" />
-            </a>
-            <a href="https://www.behance.net/rayenoueslati" target="_blank">
-              <AiFillBehanceCircle className="cursor-pointer hover:text-blue-600" />
-            </a>
-            <a href="https://www.reddit.com/user/rayen26" target="_blank">
-              <AiFillRedditCircle className="cursor-pointer hover:text-orange-500" />
-            </a>
+            <SocialMediaIconNoBorder />{" "}
           </div>
         </Reveal>
       </div>
