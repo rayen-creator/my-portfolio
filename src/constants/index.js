@@ -19,6 +19,7 @@ import farmsanctuary from "../../public/farm-sanctuary.png";
 import farmsanctuarydelivery from "../../public/farm-sanctuary-delivery.png";
 import sahti from "../../public/SAHTI_without_bg.png";
 import twitter from "../../public/twitter.png";
+import Telegram from "../../public/Telegram.png";
 
 export const slides = [
   {
@@ -217,6 +218,34 @@ export const projects = [
     title: "Twitter UI clone",
     description:
       "a simplified Twitter user interface clone using React with TypeScript, Vite for fast development, and Tailwind CSS for efficient styling",
+    stack: [
+      <FaReact className="hover:text-cyan-500" />,
+      <SiTailwindcss className="hover:text-cyan-400" />,
+      <SiTypescript className="hover:text-blue-600" />
+
+    ],
+  },
+  {
+    githublink: "https://github.com/rayen-creator/telegram_UI_clone",
+    demolink:"https://64a7f9aed3f55965eaa071cc--telegramuiclone.netlify.app/",
+    image: Telegram,
+    title: "Telegram UI clone",
+    description:
+      "a simplified Telegram user interface clone using React with TypeScript, Vite for fast development, and Tailwind CSS for efficient styling",
+    stack: [
+      <FaReact className="hover:text-cyan-500" />,
+      <SiTailwindcss className="hover:text-cyan-400" />,
+      <SiTypescript className="hover:text-blue-600" />
+
+    ],
+  },
+  {
+    githublink: "https://github.com/rayen-creator/weather_app",
+    demolink:"https://weatherweeeebappp.netlify.app/",
+    image: placeholder,
+    title: "Weather app",
+    description:
+      "Weather app built using react-ts tailwindcss vite",
     stack: [
       <FaReact className="hover:text-cyan-500" />,
       <SiTailwindcss className="hover:text-cyan-400" />,
