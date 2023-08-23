@@ -36,16 +36,7 @@ export default function About() {
                 development frameworks such as Angular and Node.js.
               </p>
             </Reveal>
-            <Reveal>
-              <p className="text-black font-Poppins_Regular text-md leading-loose text-justify hidden md:block dark:text-gray-300 ">
-                I thrive in team environments where diverse perspectives come
-                together to build exceptional solutions. I am always eager to
-                explore emerging technologies and industry trends to stay at the
-                forefront of the ever-evolving web development landscape. I
-                embrace challenges and view them as opportunities for innovation
-                and personal development.
-              </p>
-            </Reveal>
+       
             <Reveal>
               <Link
                 to={"Contact"}
