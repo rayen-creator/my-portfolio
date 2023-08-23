@@ -138,16 +138,19 @@ export const currentStack = [
   { text: "RestAPI" },
   { text: "Tailwindcss" },
   { text: "TypeScript" },
+  { text: "Nestjs" },
+
 
 ];
 
 export const currentlyLearning = [
   { text: "Nextjs" },
-  { text: "Nestjs" },
   { text: "flask" },
   { text: "django" },
   { text: "AdobeXD" },
-  { text: "supabase" },
+  { text: "E2E testing" },
+  { text: "Devops" },
+
 ];
 
 export const projects = [
