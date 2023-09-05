@@ -11,7 +11,7 @@ export default function Card({
   demolink,
 }) {
   return (
-    <div className="shadow-lg rounded-md h-[450px] flex flex-col text-center my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
+    <div className="shadow-lg rounded-md lg:h-[450px]  flex flex-col text-center my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
       <div className="shadow-inner p-1 bg-gray-100 rounded-xl ">
         <div className="flex justify-center p-1">
           <Image
@@ -53,7 +53,7 @@ export default function Card({
         <h4 className="py-4 text-primary font-Poppins_SemiBold">
           Stack
         </h4>
-        <div className="flex justify-center items-end gap-3 text-4xl lg:text-3xl">
+        <div className="flex justify-center items-end gap-3 text-2xl lg:text-3xl">
           {stack && stack.length > 0 && (
             <>
               <p className="text-gray-600 py-1">{stack[0]}</p>
