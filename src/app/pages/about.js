@@ -19,24 +19,20 @@ export default function About() {
                 <span className="text-white text-2xl font-Poppins_SemiBold bg-slate-950 p-1 m-1 rounded-sm dark:bg-gray-700 ">
                   H
                 </span>
-                ey ! My name is Rayen Oueslati full stack web develper and IT
-                engineer with a strong enthusiasm for creating robust and
-                dynamic web applications. With a solid foundation in both
-                front-end and back-end technologies, I strive to craft seamless
-                user experiences while ensuring efficient and scalable
-                solutions.
+                ey ! My name is Rayen Oueslati full stack web developer and IT engineer with a
+                strong passion for building robust and dynamic web applications. Having a
+                solid foundation in both front-end and back-end technology, I strive to create
+                simple user experiences to ensure I have an effective and scalable solution
+
               </p>
             </Reveal>
             <Reveal>
               <p className="text-black font-Poppins_Regular text-md leading-loose text-justify hidden md:block dark:text-gray-300 break-words">
-                Over the years, I have honed my skills and gained extensive
-                experience in various programming languages, frameworks, and
-                libraries. My technical repertoire includes HTML5, CSS,
-                JavaScript, Sass, and a deep understanding of modern web
-                development frameworks such as Angular and Node.js.
+                Over the years, I’ve honed my skills and gained a lot of experience with different programming languages,
+                frameworks, and libraries. My technical repertoire includes a deep understanding of HTML5, CSS,
+                JavaScript, Sass, and modern web development frameworks like Angular and Node.js.
               </p>
             </Reveal>
-       
             <Reveal>
               <Link
                 to={"Contact"}
