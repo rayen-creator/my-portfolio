@@ -162,11 +162,11 @@ export const projects = [
     description:
       "sustainable farming web application that aims to provide farmers with a platform to adopt sustainable farming practices.",
     stack: [
-      <SiAngular key="angular-icon" className="hover:text-red-500" />,
-      <SiGraphql key="graphql-icon" className="hover:text-pink-400" />,
-      <SiExpress key="express-icon" className="hover:text-black" />,
-      <SiFlask key="flask-icon" className="hover:text-black" />,
-      <SiMongodb key="mongodb-icon" className="hover:text-green-400" />,
+      <SiAngular key="angular-icon" className="hover:text-red-500" title="Angular"   />,
+      <SiGraphql key="graphql-icon" className="hover:text-pink-400" title="Graphql"  />,
+      <SiExpress key="express-icon" className="hover:text-black" title="ExpressJS"  />,
+      <SiFlask key="flask-icon" className="hover:text-black" title="Flask" />,
+      <SiMongodb key="mongodb-icon" className="hover:text-green-400" title="Mongodb"  />,
 
     ],
   },
@@ -178,11 +178,10 @@ export const projects = [
     description:
       "FarmSanctuaryDelivery purpose-built application designed specifically for delivery agents operating within the farm sanctuary.",
     stack: [
-      <SiFlutter className="hover:text-cyan-500" />,
-      <SiGraphql key="graphql-icon" className="hover:text-pink-400" />,
-      <SiExpress key="express-icon" className="hover:text-black" />,
-      <SiFlask key="flask-icon" className="hover:text-black" />,
-      <SiMongodb key="mongodb-icon" className="hover:text-green-400" />,
+      <SiFlutter className="hover:text-cyan-500" title="Flutter" />,
+      <SiGraphql key="graphql-icon" className="hover:text-pink-400" title="Graphql"  />,
+      <SiExpress key="express-icon" className="hover:text-black" title="ExpressJS"  />,
+      <SiMongodb key="mongodb-icon" className="hover:text-green-400" title="Mongodb"  />,
     ],
   },
   {
@@ -192,9 +191,9 @@ export const projects = [
     title: "Sahti",
     description:"Sahti is a cross platform fitness app that offer online coaching, shop and nutritionist services."
     ,stack: [
-      <FaSymfony className="hover:text-black" />,
-      <FaJava className="hover:text-blue-400" />,
-      <GrMysql className="hover:text-blue-600" />,
+      <FaSymfony className="hover:text-black" title="Symfony" />,
+      <FaJava className="hover:text-blue-400" title="JavaFX" />,
+      <GrMysql className="hover:text-blue-600" title="Mysql" />,
     ],
   },
   {
@@ -205,13 +204,13 @@ export const projects = [
     description:
       "Kadem is a  project built for student to help them explore professtionnel life finding new oppurtunty as intern or as employee as well.",
     stack: [
-      <SiAngular className="hover:text-red-500" />,
+      <SiAngular key="angular-icon" className="hover:text-red-500" title="Angular"   />,
 
-      <SiExpress className="hover:text-black" />,
+      <SiExpress key="express-icon" className="hover:text-black" />,
 
-      <SiSpring className="hover:text-green-600" />,
+      <SiSpring className="hover:text-green-600" title="Spring Boot" />,
 
-      <GrMysql className="hover:text-green-400" />,
+      <GrMysql className="hover:text-blue-600" title="Mysql" />,
     ],
   },
   {
@@ -222,9 +221,9 @@ export const projects = [
     description:
       "a simplified Twitter user interface clone using React with TypeScript, Vite for fast development, and Tailwind CSS for efficient styling",
     stack: [
-      <FaReact className="hover:text-cyan-500" />,
-      <SiTailwindcss className="hover:text-cyan-400" />,
-      <SiTypescript className="hover:text-blue-600" />
+      <FaReact className="hover:text-cyan-500" title="ReactJS" />,
+      <SiTailwindcss className="hover:text-cyan-400" title="TailwindCSS" />,
+      <SiTypescript className="hover:text-blue-600" title="TypeScript" />
 
     ],
   },
@@ -236,9 +235,9 @@ export const projects = [
     description:
       "a simplified Telegram user interface clone using React with TypeScript, Vite for fast development, and Tailwind CSS for efficient styling",
     stack: [
-      <FaReact className="hover:text-cyan-500" />,
-      <SiTailwindcss className="hover:text-cyan-400" />,
-      <SiTypescript className="hover:text-blue-600" />
+      <FaReact className="hover:text-cyan-500" title="ReactJS" />,
+      <SiTailwindcss className="hover:text-cyan-400" title="TailwindCSS" />,
+      <SiTypescript className="hover:text-blue-600" title="TypeScript" />
 
     ],
   },
@@ -250,10 +249,9 @@ export const projects = [
     description:
       "Weather app built using react-ts tailwindcss vite",
     stack: [
-      <FaReact className="hover:text-cyan-500" />,
-      <SiTailwindcss className="hover:text-cyan-400" />,
-      <SiTypescript className="hover:text-blue-600" />
-
+      <FaReact className="hover:text-cyan-500" title="ReactJS" />,
+      <SiTailwindcss className="hover:text-cyan-400" title="TailwindCSS" />,
+      <SiTypescript className="hover:text-blue-600" title="TypeScript" />
     ],
   },
 
