@@ -35,7 +35,6 @@ const SocialMediaIconBorder = () => {
       >
         <AiOutlineBehance className="cursor-pointer" />
       </a>
-   
     </>
   );
 };
