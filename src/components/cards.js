@@ -50,22 +50,16 @@ export default function Card({
         </div>
         <p className="py-2 font-Poppins_Regular text-justify">{description}</p>
         <div className="">
-        <h4 className="py-4 text-primary font-Poppins_SemiBold">
-          Stack
-        </h4>
-        <div className="flex justify-center items-end gap-3 text-2xl lg:text-3xl">
-          {stack && stack.length > 0 && (
-            <>
-              <p className="text-gray-600 py-1">{stack[0]}</p>
-              <p className="text-gray-600 py-1">{stack[1]}</p>
-              <p className="text-gray-600 py-1">{stack[2]}</p>
-              <p className="text-gray-600 py-1">{stack[3]}</p>
-              <p className="text-gray-600 py-1">{stack[4]}</p>
-            </>
-          )}
+          <h4 className="py-4 text-primary font-Poppins_SemiBold">Stack</h4>
+          <div className="flex justify-center items-end gap-3 text-2xl lg:text-3xl">
+            {stack && stack.length > 0 && stack.map((s)=>(
+                <>
+                <p className="text-gray-600 py-1">{s}</p>
+              </>
+               ))
+            }
+          </div>
         </div>
-        </div>
-       
       </div>
     </div>
   );
