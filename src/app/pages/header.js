@@ -49,7 +49,6 @@ export default function Header() {
             </button>
           </a>
         </div> */}
-      {/* <div className="w-full h-full mx-auto"><ComputersCanvas /></div> */}
     </section>
   );
 }

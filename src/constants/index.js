@@ -13,6 +13,7 @@ import {
   SiTypescript,
   SiVagrant,
   SiNestjs,
+  SiDocker
 } from "react-icons/si";
 import {
   FaSymfony,
@@ -36,24 +37,6 @@ import Telegram from "../../public/Telegram.png";
 export const slides = [
   {
     icon: (
-      <SiFlutter className="text-3xl sm:text-4xl md:text-7xl hover:text-cyan-500" />
-    ),
-    text: "Flutter",
-  },
-  {
-    icon: (
-      <SiExpress className="text-3xl sm:text-4xl md:text-7xl hover:text-black" />
-    ),
-    text: "Express",
-  },
-  {
-    icon: (
-      <SiMongodb className="text-3xl sm:text-4xl md:text-7xl hover:text-green-400" />
-    ),
-    text: "MongoDB",
-  },
-  {
-    icon: (
       <SiAngular className="text-3xl sm:text-4xl md:text-7xl hover:text-red-500 " />
     ),
     text: "Angular",
@@ -66,9 +49,21 @@ export const slides = [
   },
   {
     icon: (
-      <SiSpring className="text-3xl sm:text-4xl md:text-7xl hover:text-green-600" />
+      <SiExpress className="text-3xl sm:text-4xl md:text-7xl hover:text-black" />
     ),
-    text: "Spring",
+    text: "Express",
+  },
+  {
+    icon: (
+      <SiTailwindcss className="text-3xl sm:text-4xl md:text-7xl  hover:text-cyan-400" />
+    ),
+    text: "Tailwind",
+  },
+  {
+    icon: (
+      <SiDocker className="text-3xl sm:text-4xl md:text-7xl  hover:text-blue-400" />
+    ),
+    text: "Docker",
   },
   {
     icon: (
@@ -76,6 +71,19 @@ export const slides = [
     ),
     text: "Graphql",
   },
+  {
+    icon: (
+      <SiMongodb className="text-3xl sm:text-4xl md:text-7xl hover:text-green-400" />
+    ),
+    text: "MongoDB",
+  },
+  {
+    icon: (
+      <SiSpring className="text-3xl sm:text-4xl md:text-7xl hover:text-green-600" />
+    ),
+    text: "Spring",
+  },
+
   {
     icon: (
       <SiFlask className="text-3xl sm:text-4xl md:text-7xl hover:text-black" />
@@ -100,12 +108,7 @@ export const slides = [
     ),
     text: "Mysql",
   },
-  {
-    icon: (
-      <SiTailwindcss className="text-3xl sm:text-4xl md:text-7xl  hover:text-cyan-400" />
-    ),
-    text: "Tailwind",
-  },
+
   {
     icon: (
       <FaReact className="text-3xl sm:text-4xl md:text-7xl  hover:text-cyan-500" />
@@ -161,8 +164,6 @@ export const currentStack = [
 
 export const currentlyLearning = [
   { text: "Nextjs" },
-  { text: "flask" },
-  { text: "django" },
   { text: "AdobeXD" },
   { text: "E2E testing" },
   { text: "Devops" },
@@ -192,6 +193,7 @@ export const projects = [
         className="hover:text-blue-400"
         title="Docker"
       />,
+      <SiSpring className="hover:text-green-600" title="Spring Boot" />,
       <FcLinux
         key="FcLinux-icon"
         className="hover:text-yellow-100"
