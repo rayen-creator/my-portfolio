@@ -17,11 +17,11 @@ const Carousel = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="text-gray-600 cursor-grab"
+        className="text-gray-600"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <Slide icon={slide.icon} text={slide.text} />
+            <Slide key={slide.text} icon={slide.icon} text={slide.text} />
           </SwiperSlide>
         ))}
       </Swiper>

@@ -2,13 +2,9 @@ import {
   AiFillBehanceCircle,
   AiFillGithub,
   AiFillLinkedin,
-  AiFillRedditCircle,
-  AiFillTwitterCircle,
   AiOutlineBehance,
   AiOutlineGithub,
   AiOutlineLinkedin,
-  AiOutlineReddit,
-  AiOutlineTwitter,
 } from "react-icons/ai";
 
 const SocialMediaIconBorder = () => {

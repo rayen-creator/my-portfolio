@@ -6,14 +6,14 @@ import {
   SiSpring,
   SiGraphql,
   SiFlask,
-  SiOracle,
   SiAdobexd,
   SiTailwindcss,
   SiBootstrap,
   SiTypescript,
   SiVagrant,
   SiNestjs,
-  SiDocker
+  SiDocker,
+  SiPostgresql 
 } from "react-icons/si";
 import {
   FaSymfony,
@@ -37,13 +37,12 @@ import Telegram from "../../public/Telegram.png";
 export const slides = [
   {
     icon: (
-      <SiAngular className="text-3xl sm:text-4xl md:text-7xl hover:text-red-500 " />
-    ),
+      <SiAngular className="text-8xl sm:text-4xl md:text-7xl hover:text-red-500" />),
     text: "Angular",
   },
   {
     icon: (
-      <SiNestjs className="text-3xl sm:text-4xl md:text-7xl hover:text-red-500 " />
+      <SiNestjs className="text-3xl sm:text-4xl md:text-7xl hover:text-red-500" />
     ),
     text: "Nestjs",
   },
@@ -55,13 +54,13 @@ export const slides = [
   },
   {
     icon: (
-      <SiTailwindcss className="text-3xl sm:text-4xl md:text-7xl  hover:text-cyan-400" />
+      <SiTailwindcss className="text-3xl sm:text-4xl md:text-7xl hover:text-cyan-400" />
     ),
     text: "Tailwind",
   },
   {
     icon: (
-      <SiDocker className="text-3xl sm:text-4xl md:text-7xl  hover:text-blue-400" />
+      <SiDocker className="text-3xl sm:text-4xl md:text-7xl hover:text-blue-600" />
     ),
     text: "Docker",
   },
@@ -83,7 +82,6 @@ export const slides = [
     ),
     text: "Spring",
   },
-
   {
     icon: (
       <SiFlask className="text-3xl sm:text-4xl md:text-7xl hover:text-black" />
@@ -138,12 +136,6 @@ export const slides = [
       <SiBootstrap className="text-3xl sm:text-4xl md:text-7xl  hover:text-purple-800" />
     ),
     text: "Bootstrap",
-  },
-  {
-    icon: (
-      <SiOracle className="text-3xl sm:text-4xl md:text-7xl  hover:text-red-700" />
-    ),
-    text: "Oracle",
   },
 ];
 
@@ -380,6 +372,5 @@ export const projects = [
       <GrMysql className="hover:text-blue-600" title="Mysql" />,
     ],
   },
-  
 
 ];

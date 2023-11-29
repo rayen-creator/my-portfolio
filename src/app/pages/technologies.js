@@ -4,6 +4,7 @@ import Title from "../../components/title";
 import Carousel from "../../components/carousel";
 
 const Technologies = () => {
+  
   return (
     <section id="Technologies" className="my-1">
       <div>
