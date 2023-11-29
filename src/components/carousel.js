@@ -17,7 +17,7 @@ const Carousel = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Pagination, Navigation]}
-        className="text-gray-600"
+        className="text-gray-600 cursor-grab"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
