@@ -13,7 +13,9 @@ import {
   SiVagrant,
   SiNestjs,
   SiDocker,
-  SiPostgresql 
+  SiPostgresql ,
+  SiNx ,
+  SiNginx 
 } from "react-icons/si";
 import {
   FaSymfony,
@@ -78,6 +80,24 @@ export const slides = [
   },
   {
     icon: (
+      <SiPostgresql className="text-3xl sm:text-4xl md:text-7xl hover:text-blue-800" />
+    ),
+    text: "Postgresql",
+  },
+  {
+    icon: (
+      <SiNx className="text-3xl sm:text-4xl md:text-7xl hover:text-blue-900" />
+    ),
+    text: "NX monorepo",
+  },
+  {
+    icon: (
+      <SiNginx className="text-3xl sm:text-4xl md:text-7xl hover:text-green-600" />
+    ),
+    text: "Nginx",
+  },
+  {
+    icon: (
       <SiSpring className="text-3xl sm:text-4xl md:text-7xl hover:text-green-600" />
     ),
     text: "Spring",
@@ -109,7 +129,7 @@ export const slides = [
 
   {
     icon: (
-      <FaReact className="text-3xl sm:text-4xl md:text-7xl  hover:text-cyan-500" />
+      <FaReact className="text-3xl sm:text-4xl md:text-7xl  hover:text-blue-400" />
     ),
     text: "React",
   },

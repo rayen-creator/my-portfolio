@@ -62,8 +62,8 @@ export default function About() {
               </Reveal>
               <Reveal>
                 <div className="my-5 ">
-                  {currentStack.map((stack) => (
-                    <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
+                  {currentStack.map((stack,index) => (
+                    <span key={index} className="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
                       {stack.text}
                     </span>
                   ))}
@@ -79,8 +79,8 @@ export default function About() {
               </Reveal>
               <Reveal>
                 <div className="my-5 ">
-                  {currentlyLearning.map((stack) => (
-                    <span class="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
+                  {currentlyLearning.map((stack,index) => (
+                    <span key={index} className="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
                       {stack.text}
                     </span>
                   ))}

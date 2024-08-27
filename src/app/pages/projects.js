@@ -12,10 +12,10 @@ export default function Projects() {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 ">
         {
-          projects.map((p)=>(
-            <Reveal>
+          projects.map((p,index)=>(
+            <Reveal key={index}>
               <Card 
-              key={p.title}
+              key={index}
               title={p.title}
               description={p.description}
               githublink={p.githublink}

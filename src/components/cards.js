@@ -54,10 +54,10 @@ export default function Card({
           <div className="flex justify-center items-end gap-3 text-2xl lg:text-3xl">
             {stack &&
               stack.length > 0 &&
-              stack.map((s) => (
-                <>
+              stack.map((s, index) => (
+                <div key={index}>
                   <p className="text-gray-600 py-1">{s}</p>
-                </>
+                </div>
               ))}
           </div>
         </div>
