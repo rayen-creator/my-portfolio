@@ -26,7 +26,7 @@ const Carousel = () => {
         ))}
       </Swiper>
     </>
-  );
+  ); 
 };
 
 export default Carousel;
