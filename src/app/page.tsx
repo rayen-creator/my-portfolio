@@ -7,6 +7,7 @@ import Projects from "./pages/projects";
 import Technologies from "./pages/technologies";
 import { useThemeContext } from "./utils/context/theme";
 import About from "./pages/about";
+import Experience from "./pages/experience";
 import Navbar from "@/components/navbar";
 
 export default function Home() {
@@ -19,6 +20,7 @@ export default function Home() {
         <div className="px-10 md:px-20  lg:px-40 ">
           <Header />
           <About />
+          <Experience />
           <Projects />
           <Technologies />
           <Contact />

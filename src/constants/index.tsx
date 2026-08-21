@@ -52,6 +52,22 @@ type Project = {
   stack: React.ReactNode[];
 };
 
+type ExperienceProject = {
+  name: string;
+  bullets: string[];
+};
+
+type Experience = {
+  role: string;
+  company: string;
+  location: string;
+  period: string;
+  current?: boolean;
+  bullets?: string[];
+  projects?: ExperienceProject[];
+  keywords: string[];
+};
+
 export const slides: Slide[] = [
   {
     icon: (
@@ -194,6 +210,97 @@ export const currentStack: StackItem[] = [
 export const currentlyLearning: StackItem[] = [
   { text: "AI Agents" },
   { text: "Cloud" },
+];
+
+export const experiences: Experience[] = [
+  {
+    role: "Full Stack Engineer",
+    company: "Save Your Wardrobe",
+    location: "Tunis, Tunisia",
+    period: "Jun 2026 – Present",
+    current: true,
+    bullets: [
+      "Developed frontend features for the Brand Retail application, contributing to the enhancement of digital retail and after-sales workflows.",
+      "Contributed to the development and integration of logistics microservices, implementing and consuming APIs to support end-to-end retail operations.",
+      "Collaborated with cross-functional teams to deliver scalable features across frontend applications and backend services within a microservices-based architecture.",
+    ],
+    keywords: [
+      "React",
+      "NestJS",
+      "ExpressJS",
+      "MongoDB",
+      "Nx",
+      "Microservices",
+      "Redis",
+      "GIT",
+    ],
+  },
+  {
+    role: "Full Stack Engineer",
+    company: "Karriery",
+    location: "Tunis, Tunisia",
+    period: "Nov 2023 – May 2026",
+    projects: [
+      {
+        name: "nBold — Microsoft Teams App Extensions (Collaboration Enablement Platform)",
+        bullets: [
+          "Designed and implemented core backend modules for the nBold Microsoft Teams extension used by 50+ organizations.",
+          "Ensured scalability, maintainability, and reliability through modular architecture, clean code, and continuous refactoring.",
+          "Built and optimized features leveraging SharePoint API and Microsoft Graph API for seamless automation and governance.",
+          "Designed and developed an AI-powered conversational agent enabling users to create and configure nBold Microsoft Teams Templates via chat interactions.",
+        ],
+      },
+      {
+        name: "TeamsPlus — Microsoft Teams App Extensions (Incident & Ops Management)",
+        bullets: [
+          "Co-developed a real-time Incident Management App used by railway operators for live train incident tracking via smart forms, boosting reporting accuracy and response times.",
+          "Built an Operations Dashboard consolidating train schedules, incident logs, and user activity to provide actionable analytics to operational supervisors.",
+        ],
+      },
+      {
+        name: "Nemo — ERP Platform (Legacy System Modernization)",
+        bullets: [
+          "Contributed to the migration of monolithic legacy ERP components to modern stacks (Angular, NestJS), improving maintainability and long-term scalability.",
+          "Refactored critical modules to enhance performance and ensure modularity, enabling faster onboarding of new business features.",
+          "Facilitated seamless integration of modern components without service disruption, ensuring stable operation across departments.",
+        ],
+      },
+    ],
+    keywords: [
+      "Angular",
+      "React",
+      "NestJS",
+      "PostgreSQL",
+      "MongoDB",
+      "Tailwind CSS",
+      "MS Graph API",
+      "SharePoint API",
+      "Nx",
+      "Microservices",
+      "Nginx",
+      "RabbitMQ",
+      "Redis",
+      "Event-driven Architecture",
+      "WebSocket",
+      "GIT",
+    ],
+  },
+  {
+    role: "Software Developer",
+    company: "TSI (Tunisie Systèmes d'informations)",
+    location: "Tunis, Tunisia",
+    period: "Oct 2020 – Jan 2021",
+    bullets: [
+      "Contributed to the maintenance and evolution of TSI's ERP solution by fixing software issues, enhancing existing features, and designing Crystal Reports for invoices and business documentation.",
+    ],
+    keywords: [
+      "C#",
+      "WinForms",
+      "Microsoft SQL Server",
+      "Crystal Reports",
+      "DevExpress",
+    ],
+  },
 ];
 
 export const projects: Project[] = [

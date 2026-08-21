@@ -49,6 +49,22 @@ const Navbar = () => {
             }
           >
             <Link
+              to={"Experience"}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={100}
+            >
+              {" "}
+              Experience
+            </Link>
+          </li>
+          <li
+            className={
+              "hover:text-gray-400 text-[18px] font-medium cursor-pointer dark:text-white dark:hover:text-gray-600"
+            }
+          >
+            <Link
               to={"Projects"}
               spy={true}
               smooth={true}
@@ -140,6 +156,22 @@ const Navbar = () => {
                 >
                   {" "}
                   About
+                </Link>
+              </li>
+              <li
+                className={
+                  "font-medium cursor-pointer text-[16px] text-gray-200 dark:text-white"
+                }
+              >
+                <Link
+                  to={"Experience"}
+                  spy={true}
+                  smooth={true}
+                  offset={-95}
+                  duration={100}
+                >
+                  {" "}
+                  Experience
                 </Link>
               </li>
               <li
