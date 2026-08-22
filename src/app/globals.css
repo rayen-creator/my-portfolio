@@ -17,8 +17,30 @@
   src: url('../../public/Poppins-SemiBold.ttf');
 
 }
+:root {
+  /* same green hue/personality as the neon, just lightened toward a
+     soft mint so it doesn't glare on a white canvas.
+     space-separated (no commas) so it composes into rgb(r g b / a) */
+  --color-primary-rgb: 77 230 168;
+}
+.dark {
+  /* full neon punch on the dark canvas */
+  --color-primary-rgb: 10 255 157;
+}
+
 @layer base {
   html {
     @apply scroll-smooth;
   }
+  body {
+    @apply bg-white dark:bg-ink-950;
+  }
+  ::selection {
+    background: rgb(var(--color-primary-rgb) / 0.25);
+  }
+}
+
+.bg-noise {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 0);
+  background-size: 22px 22px;
 }

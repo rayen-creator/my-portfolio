@@ -28,12 +28,12 @@ const ScrollToTop = () => {
 
   return (
     <button
-      className={`fixed bottom-4 right-4 text-white p-2 rounded-lg animate-none hover:animate-bounce shadow ${
+      className={`fixed bottom-4 right-4 p-2 rounded-lg border border-primary/30 bg-white/80 dark:bg-ink-900/80 backdrop-blur animate-none hover:animate-bounce hover:border-primary shadow ${
         isVisible ? "block" : "hidden"
       }`}
       onClick={scrollToTop}
     >
-      <AiOutlineArrowUp className=" text-primary text-3xl dark:text-primary" />
+      <AiOutlineArrowUp className="text-primary text-2xl" />
     </button>
   );
 };
