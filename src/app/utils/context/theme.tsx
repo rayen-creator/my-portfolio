@@ -9,10 +9,10 @@ import {
 
 type ThemeContextValue = [boolean, Dispatch<SetStateAction<boolean>>];
 
-const Context = createContext<ThemeContextValue>([false, () => {}]);
+const Context = createContext<ThemeContextValue>([true, () => {}]);
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <Context.Provider value={[darkMode, setDarkMode]}>
       {children}

@@ -9,61 +9,73 @@ export default function Card({
   description,
   stack,
   demolink,
+  client,
 }: {
-  githublink: string;
+  githublink: string | null;
   image: StaticImageData;
   title: string;
   description: string;
   stack: React.ReactNode[];
-  demolink: string;
+  demolink: string | null;
+  client?: { name: string; country: string; flag: string };
 }) {
   return (
-    <div className="shadow-lg rounded-md xl:h-[475px] lg:h-[450px]  flex flex-col text-center my-10 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:shadow-slate-800 duration-300 dark:bg-white">
-      <div className="shadow-inner p-1 bg-gray-100 rounded-xl ">
+    <div className="h-[580px] rounded-md border border-gray-200 dark:border-white/10 bg-white dark:bg-ink-900 flex flex-col text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-glow-sm">
+      <div className="p-1 bg-gray-50 dark:bg-ink-800 rounded-t-md border-b border-gray-200 dark:border-white/10">
         <div className="flex justify-center p-1">
-          <Image
-            src={image}
-            width={150}
-            height={150}
-            alt="image"
-            placeholder="blur"
-          />
+          <Image src={image} width={150} height={150} alt={title} />
         </div>
-      </div>{" "}
-      <div className=" pt-1 px-7 pb-7 rounded-md">
-        <div className="relative flex py-5 items-center">
-          <span className="flex-shrink mx-1  text-lg font-Poppins_SemiBold">
-            <h3 className=" lg:break-all">{title}</h3>
-          </span>
-          <div className="flex-grow border-t border-gray-400 mx-1"></div>
-          <a
-            className="text-gray-600 py-1 cursor-pointer float-left hover:text-black"
-            href={githublink}
-            target="_blank"
-          >
-            <AiFillGithub className=" text-3xl" />
-          </a>
-          {demolink == "" ? (
-            <span></span>
-          ) : (
-            <a
-              className="text-gray-600 py-1 cursor-pointer float-left hover:text-black"
-              href={demolink}
-              target="_blank"
+      </div>
+      <div className="pt-4 px-7 pb-7 rounded-md flex-1 flex flex-col overflow-hidden">
+        <div className="flex items-center gap-2">
+          {client && (
+            <span
+              className="inline-flex items-center gap-1.5 font-mono text-[11px] text-gray-500 dark:text-gray-400"
+              title={client.country}
             >
-              <CiShare1 className=" text-3xl" />
-            </a>
+              <span>{client.flag}</span>
+              {client.name}
+            </span>
           )}
+          <div className="flex-1" />
+          <div className="flex items-center gap-3">
+            {githublink && (
+              <a
+                className="text-gray-500 py-1 cursor-pointer hover:text-primary"
+                href={githublink}
+                target="_blank"
+              >
+                <AiFillGithub className="text-2xl" />
+              </a>
+            )}
+            {demolink && (
+              <a
+                className="text-gray-500 py-1 cursor-pointer hover:text-primary"
+                href={demolink}
+                target="_blank"
+              >
+                <CiShare1 className="text-2xl" />
+              </a>
+            )}
+          </div>
         </div>
-        <p className="py-2 font-Poppins_Regular text-justify">{description}</p>
-        <div className="">
-          <h4 className="py-4 text-primary font-Poppins_SemiBold">Stack</h4>
-          <div className="flex justify-center items-end gap-3 text-2xl lg:text-3xl">
+        <h3 className="mt-2 font-mono text-left text-sm text-gray-900 dark:text-gray-100 lg:break-all">
+          <span className="text-primary">rayen/</span>
+          {title.trim().toLowerCase().replace(/\s+/g, "-")}
+        </h3>
+        <p className="py-3 font-Poppins_Regular text-sm text-justify text-gray-700 dark:text-gray-300 flex-1 line-clamp-4">
+          {description}
+        </p>
+        <div className="mt-auto">
+          <h4 className="pb-3 font-mono text-[11px] uppercase tracking-wide text-gray-500 dark:text-gray-400">
+            stack
+          </h4>
+          <div className="flex justify-center items-end flex-wrap gap-3 text-2xl lg:text-3xl">
             {stack &&
               stack.length > 0 &&
               stack.map((s, index) => (
                 <div key={index}>
-                  <p className="text-gray-600 py-1">{s}</p>
+                  <p className="text-gray-500 dark:text-gray-400 py-1">{s}</p>
                 </div>
               ))}
           </div>

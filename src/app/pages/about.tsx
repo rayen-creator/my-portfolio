@@ -9,14 +9,14 @@ export default function About() {
   return (
     <section id="About" className="my-20  md:mt:44 ">
       <Reveal>
-        <Title title={"About"} />
+        <Title title={"About"} index={"01"} />
       </Reveal>
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-10">
         <div className="col-span-2">
           <div className="space-y-4">
             <Reveal>
               <p className="text-black font-Poppins_Regular text-md leading-loose text-justify dark:text-gray-300 break-words">
-                <span className="text-white text-2xl font-Poppins_SemiBold bg-slate-950 p-1 m-1 rounded-sm dark:bg-gray-700 ">
+                <span className="text-ink-950 text-2xl font-Poppins_SemiBold bg-primary p-1 m-1 rounded-sm">
                   H
                 </span>
                 ey ! My name is Rayen Oueslati full stack web developer and IT engineer with a
@@ -41,10 +41,9 @@ export default function About() {
                 offset={-85}
                 duration={100}
               >
-                <button className="cursor-pointer text-black font-Poppins_Regular p-2 text-lg relative inline-flex items-center justify-start overflow-hidden transition-all bg-primary rounded-lg hover:bg-primary group">
-                  <span className="w-0 h-0 rounded bg-green-400  absolute top-0 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
-                  <span className="w-full text-gray-600 transition-colors duration-300 ease-in-out group-hover:text-white z-10">
-                    Hire me{" "}
+                <button className="cursor-pointer font-mono text-sm p-3 px-6 relative inline-flex items-center justify-start overflow-hidden transition-all border border-primary/40 rounded-md bg-primary/10 hover:bg-primary hover:shadow-glow group">
+                  <span className="text-primary group-hover:text-ink-950 transition-colors duration-300 ease-in-out">
+                    $ hire --me
                   </span>
                 </button>
               </Link>
@@ -55,35 +54,49 @@ export default function About() {
           <div>
             <div className="my-10">
               <Reveal>
-                <div className="flex justify-start font-Poppins_SemiBold text-xl text-black dark:text-white">
-                  <BiCodeAlt className="text-3xl text-black bg-primary rounded-md  p-1 mr-2" />{" "}
+                <div className="flex items-center gap-2 font-Poppins_SemiBold text-xl text-black dark:text-white">
+                  <BiCodeAlt className="text-3xl text-ink-950 bg-primary rounded-md p-1" />
                   Current stack
                 </div>
               </Reveal>
               <Reveal>
-                <div className="my-5 ">
-                  {currentStack.map((stack,index) => (
-                    <span key={index} className="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                      {stack.text}
-                    </span>
-                  ))}
+                <div className="mt-4 rounded-md border border-gray-200 dark:border-white/10 bg-white dark:bg-ink-900 p-4 font-mono text-xs">
+                  <div className="text-gray-400">{"{"}</div>
+                  <div className="flex flex-wrap gap-2 py-2 pl-4">
+                    {currentStack.map((stack, index) => (
+                      <span
+                        key={index}
+                        className="inline-flex items-center px-2 py-1 text-primary bg-primary/10 border border-primary/30 rounded"
+                      >
+                        {stack.text}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="text-gray-400">{"}"}</div>
                 </div>
               </Reveal>
             </div>
             <div className="my-10">
               <Reveal>
-                <div className="flex justify-start font-Poppins_SemiBold text-xl text-black dark:text-white">
-                  <SiFuturelearn className="text-3xl text-black bg-primary rounded-md  p-1 mr-2" />{" "}
+                <div className="flex items-center gap-2 font-Poppins_SemiBold text-xl text-black dark:text-white">
+                  <SiFuturelearn className="text-3xl text-ink-950 bg-accent rounded-md p-1" />
                   Currently learning
                 </div>
               </Reveal>
               <Reveal>
-                <div className="my-5 ">
-                  {currentlyLearning.map((stack,index) => (
-                    <span key={index} className="inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-black rounded-full border border-primary">
-                      {stack.text}
-                    </span>
-                  ))}
+                <div className="mt-4 rounded-md border border-gray-200 dark:border-white/10 bg-white dark:bg-ink-900 p-4 font-mono text-xs">
+                  <div className="text-gray-400">{"{"}</div>
+                  <div className="flex flex-wrap gap-2 py-2 pl-4">
+                    {currentlyLearning.map((stack, index) => (
+                      <span
+                        key={index}
+                        className="inline-flex items-center px-2 py-1 text-accent bg-accent/10 border border-accent/30 rounded"
+                      >
+                        {stack.text}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="text-gray-400">{"}"}</div>
                 </div>
               </Reveal>
             </div>

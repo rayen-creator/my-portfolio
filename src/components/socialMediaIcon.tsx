@@ -13,21 +13,21 @@ const SocialMediaIconBorder = () => {
       <a
         href="https://github.com/rayen-creator"
         target="_blank"
-        className="border rounded-full p-2 hover:bg-black hover:text-white "
+        className="border border-gray-300 dark:border-white/10 rounded-full p-2 hover:border-primary hover:text-primary transition-colors"
       >
         <AiOutlineGithub className="cursor-pointer   " />
       </a>
       <a
         href="https://www.linkedin.com/in/rayen-oueslati-72a55b1b0/"
         target="_blank"
-        className="border rounded-full p-2 hover:bg-blue-600 hover:text-white"
+        className="border border-gray-300 dark:border-white/10 rounded-full p-2 hover:border-primary hover:text-primary transition-colors"
       >
         <AiOutlineLinkedin className="cursor-pointer " />
       </a>
       <a
         href="https://www.behance.net/rayenoueslati"
         target="_blank"
-        className="border rounded-full p-2 hover:bg-blue-600 hover:text-white"
+        className="border border-gray-300 dark:border-white/10 rounded-full p-2 hover:border-primary hover:text-primary transition-colors"
       >
         <AiOutlineBehance className="cursor-pointer" />
       </a>
@@ -39,16 +39,16 @@ const SocialMediaIconNoBorder = () => {
   return (
     <>
       <a href="https://github.com/rayen-creator" target="_blank">
-        <AiFillGithub className="cursor-pointer hover:text-black" />
+        <AiFillGithub className="cursor-pointer hover:text-primary transition-colors" />
       </a>
       <a
         href="https://www.linkedin.com/in/rayen-oueslati-72a55b1b0/"
         target="_blank"
       >
-        <AiFillLinkedin className="cursor-pointer hover:text-blue-600" />
+        <AiFillLinkedin className="cursor-pointer hover:text-primary transition-colors" />
       </a>
       <a href="https://www.behance.net/rayenoueslati" target="_blank">
-        <AiFillBehanceCircle className="cursor-pointer hover:text-blue-600" />
+        <AiFillBehanceCircle className="cursor-pointer hover:text-primary transition-colors" />
       </a>
     </>
   );
